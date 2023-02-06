@@ -1,0 +1,30 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,6.0.2+dfsg-1*%
+%TF.CreationDate,2022-12-19T10:39:51-05:00*%
+%TF.ProjectId,mosfet-test-board,6d6f7366-6574-42d7-9465-73742d626f61,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Soldermask,Bot*%
+%TF.FilePolarity,Negative*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 6.0.2+dfsg-1) date 2022-12-19 10:39:51*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10R,1.700000X1.700000*%
+%ADD11O,1.700000X1.700000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,J2*%
+X66675000Y-86995000D03*
+D11*
+X69215000Y-86995000D03*
+X71755000Y-86995000D03*
+%TD*%
+D10*
+%TO.C,J1*%
+X67945000Y-66675000D03*
+D11*
+X70485000Y-66675000D03*
+%TD*%
+M02*

@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "dragon-lair-ac-board"
+		},
+		{
+			"path": "dragon-lair-ascom"
+		},
+		{
+			"path": "dragon-lair-board"
+		},
+		{
+			"path": "dragon-lair-dc-board"
+		},
+		{
+			"path": "dragon-lair-firmware"
+		},
+		{
+			"path": "dragon-lair-indi"
+		},
+		{
+			"path": "dragon-lair-web"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cstdio": "cpp",
+			"string_view": "cpp"
+		}
+	}
+}

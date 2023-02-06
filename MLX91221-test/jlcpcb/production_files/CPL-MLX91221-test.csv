@@ -1,0 +1,5 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,47nF,C_0603_1608Metric,63.5,-88.9,180.0,top
+C2,47nF,C_0603_1608Metric,67.31,-88.9,0.0,top
+C3,4.7nF,C_0603_1608Metric,66.675,-86.995,0.0,top
+U1,MLX91221,SOIC-8_3.9x4.9mm_P1.27mm,66.04,-93.98,90.0,top

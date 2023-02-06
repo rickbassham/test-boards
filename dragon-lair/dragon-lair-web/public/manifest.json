@@ -1,0 +1,15 @@
+{
+  "short_name": "Dragon Lair",
+  "name": "Dark Dragons Astronomy - Dragon Lair Roof Controller",
+  "icons": [
+    {
+      "src": "/logo512.png",
+      "type": "image/png",
+      "sizes": "512x412"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#721c1d",
+  "background_color": "#ffffff"
+}

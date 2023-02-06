@@ -1,0 +1,7 @@
+"Designator","JLCPCB Part #","Comment","Footprint"
+"C1, ","C268016","22uF","Capacitor_SMD:C_0603_1608Metric"
+"J1, ","","Conn_01x02","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+"J2, ","","Conn_01x03","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+"Q1, ","C80964","AOD508","Package_TO_SOT_SMD:TO-252-2"
+"R1, ","C105588","100Ω","Resistor_SMD:R_0603_1608Metric"
+"U1, ","C99395","UCC27517","Package_TO_SOT_SMD:SOT-23-5"

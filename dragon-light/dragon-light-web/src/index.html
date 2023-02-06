@@ -1,0 +1,798 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dragon Light Controller</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#731b1d">
+    <meta name="apple-mobile-web-app-title" content="Dragon Light">
+    <meta name="application-name" content="Dragon Light">
+    <meta name="msapplication-TileColor" content="#731b1d">
+    <meta name="theme-color" content="#731b1d">
+
+    <style>
+        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+        /* Document
+   ========================================================================== */
+
+        /**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+        html {
+            line-height: 1.15;
+            /* 1 */
+            -webkit-text-size-adjust: 100%;
+            /* 2 */
+        }
+
+        /* Sections
+   ========================================================================== */
+
+        /**
+ * Remove the margin in all browsers.
+ */
+
+        body {
+            margin: 0;
+        }
+
+        /**
+ * Render the `main` element consistently in IE.
+ */
+
+        main {
+            display: block;
+        }
+
+        /**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+
+        /* Grouping content
+   ========================================================================== */
+
+        /**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+        hr {
+            box-sizing: content-box;
+            /* 1 */
+            height: 0;
+            /* 1 */
+            overflow: visible;
+            /* 2 */
+        }
+
+        /**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+        pre {
+            font-family: monospace, monospace;
+            /* 1 */
+            font-size: 1em;
+            /* 2 */
+        }
+
+        /* Text-level semantics
+   ========================================================================== */
+
+        /**
+ * Remove the gray background on active links in IE 10.
+ */
+
+        a {
+            background-color: transparent;
+        }
+
+        /**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+        abbr[title] {
+            border-bottom: none;
+            /* 1 */
+            text-decoration: underline;
+            /* 2 */
+            text-decoration: underline dotted;
+            /* 2 */
+        }
+
+        /**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        /**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+        code,
+        kbd,
+        samp {
+            font-family: monospace, monospace;
+            /* 1 */
+            font-size: 1em;
+            /* 2 */
+        }
+
+        /**
+ * Add the correct font size in all browsers.
+ */
+
+        small {
+            font-size: 80%;
+        }
+
+        /**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        /* Embedded content
+   ========================================================================== */
+
+        /**
+ * Remove the border on images inside links in IE 10.
+ */
+
+        img {
+            border-style: none;
+        }
+
+        /* Forms
+   ========================================================================== */
+
+        /**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            /* 1 */
+            font-size: 100%;
+            /* 1 */
+            line-height: 1.15;
+            /* 1 */
+            margin: 0;
+            /* 2 */
+        }
+
+        /**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+        button,
+        input {
+            /* 1 */
+            overflow: visible;
+        }
+
+        /**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+        button,
+        select {
+            /* 1 */
+            text-transform: none;
+        }
+
+        /**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+        button,
+        [type="button"],
+        [type="reset"],
+        [type="submit"] {
+            -webkit-appearance: button;
+        }
+
+        /**
+ * Remove the inner border and padding in Firefox.
+ */
+
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+            border-style: none;
+            padding: 0;
+        }
+
+        /**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+        button:-moz-focusring,
+        [type="button"]:-moz-focusring,
+        [type="reset"]:-moz-focusring,
+        [type="submit"]:-moz-focusring {
+            outline: 1px dotted ButtonText;
+        }
+
+        /**
+ * Correct the padding in Firefox.
+ */
+
+        fieldset {
+            padding: 0.35em 0.75em 0.625em;
+        }
+
+        /**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+        legend {
+            box-sizing: border-box;
+            /* 1 */
+            color: inherit;
+            /* 2 */
+            display: table;
+            /* 1 */
+            max-width: 100%;
+            /* 1 */
+            padding: 0;
+            /* 3 */
+            white-space: normal;
+            /* 1 */
+        }
+
+        /**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+        progress {
+            vertical-align: baseline;
+        }
+
+        /**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+        textarea {
+            overflow: auto;
+        }
+
+        /**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+        [type="checkbox"],
+        [type="radio"] {
+            box-sizing: border-box;
+            /* 1 */
+            padding: 0;
+            /* 2 */
+        }
+
+        /**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+        [type="number"]::-webkit-inner-spin-button,
+        [type="number"]::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        /**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+        [type="search"] {
+            -webkit-appearance: textfield;
+            /* 1 */
+            outline-offset: -2px;
+            /* 2 */
+        }
+
+        /**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+        [type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        /**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            /* 1 */
+            font: inherit;
+            /* 2 */
+        }
+
+        /* Interactive
+   ========================================================================== */
+
+        /*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+        details {
+            display: block;
+        }
+
+        /*
+ * Add the correct display in all browsers.
+ */
+
+        summary {
+            display: list-item;
+        }
+
+        /* Misc
+   ========================================================================== */
+
+        /**
+ * Add the correct display in IE 10+.
+ */
+
+        template {
+            display: none;
+        }
+
+        /**
+ * Add the correct display in IE 10.
+ */
+
+        [hidden] {
+            display: none;
+        }
+    </style>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #logo {
+            fill: #fff;
+        }
+
+        .slidecontainer {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .slidecontainer input[type=range] {
+            flex-grow: 11;
+        }
+
+        .slidecontainer input[type=checkbox] {
+            flex-grow: 1;
+            width: 32px;
+            height: 32px;
+        }
+
+        #data {
+            display: flex;
+            gap: 1em;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            padding: 1rem;
+        }
+
+        #data>*>* {
+            line-height: 1em;
+            flex-grow: 1;
+            margin: 0;
+        }
+
+        #error {
+            display: none;
+        }
+
+        @media all and (max-width: 900px) {
+            #data {
+                /* On small screens, we are no longer using row direction but column */
+                flex-direction: column;
+            }
+        }
+
+        header {
+            background-color: #731b1d;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 {
+            flex-grow: 4;
+            margin: 0 0 0 1em;
+            color: #fff;
+        }
+
+        header ul {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header li {
+            margin: 0 0 0 1em;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 0 1rem 1rem 1rem;
+            margin: 1rem;
+            border: #731b1d 1px solid;
+            box-shadow: #731b1c3b 0.5em 0.5em 0.5em;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        footer a {
+            color: #731b1d;
+        }
+    </style>
+    <script>
+        var QRCode; !function () { function a(a) { this.mode = c.MODE_8BIT_BYTE, this.data = a, this.parsedData = []; for (var b = [], d = 0, e = this.data.length; e > d; d++) { var f = this.data.charCodeAt(d); f > 65536 ? (b[0] = 240 | (1835008 & f) >>> 18, b[1] = 128 | (258048 & f) >>> 12, b[2] = 128 | (4032 & f) >>> 6, b[3] = 128 | 63 & f) : f > 2048 ? (b[0] = 224 | (61440 & f) >>> 12, b[1] = 128 | (4032 & f) >>> 6, b[2] = 128 | 63 & f) : f > 128 ? (b[0] = 192 | (1984 & f) >>> 6, b[1] = 128 | 63 & f) : b[0] = f, this.parsedData = this.parsedData.concat(b) } this.parsedData.length != this.data.length && (this.parsedData.unshift(191), this.parsedData.unshift(187), this.parsedData.unshift(239)) } function b(a, b) { this.typeNumber = a, this.errorCorrectLevel = b, this.modules = null, this.moduleCount = 0, this.dataCache = null, this.dataList = [] } function i(a, b) { if (void 0 == a.length) throw new Error(a.length + "/" + b); for (var c = 0; c < a.length && 0 == a[c];)c++; this.num = new Array(a.length - c + b); for (var d = 0; d < a.length - c; d++)this.num[d] = a[d + c] } function j(a, b) { this.totalCount = a, this.dataCount = b } function k() { this.buffer = [], this.length = 0 } function m() { return "undefined" != typeof CanvasRenderingContext2D } function n() { var a = !1, b = navigator.userAgent; return /android/i.test(b) && (a = !0, aMat = b.toString().match(/android ([0-9]\.[0-9])/i), aMat && aMat[1] && (a = parseFloat(aMat[1]))), a } function r(a, b) { for (var c = 1, e = s(a), f = 0, g = l.length; g >= f; f++) { var h = 0; switch (b) { case d.L: h = l[f][0]; break; case d.M: h = l[f][1]; break; case d.Q: h = l[f][2]; break; case d.H: h = l[f][3] }if (h >= e) break; c++ } if (c > l.length) throw new Error("Too long data"); return c } function s(a) { var b = encodeURI(a).toString().replace(/\%[0-9a-fA-F]{2}/g, "a"); return b.length + (b.length != a ? 3 : 0) } a.prototype = { getLength: function () { return this.parsedData.length }, write: function (a) { for (var b = 0, c = this.parsedData.length; c > b; b++)a.put(this.parsedData[b], 8) } }, b.prototype = { addData: function (b) { var c = new a(b); this.dataList.push(c), this.dataCache = null }, isDark: function (a, b) { if (0 > a || this.moduleCount <= a || 0 > b || this.moduleCount <= b) throw new Error(a + "," + b); return this.modules[a][b] }, getModuleCount: function () { return this.moduleCount }, make: function () { this.makeImpl(!1, this.getBestMaskPattern()) }, makeImpl: function (a, c) { this.moduleCount = 4 * this.typeNumber + 17, this.modules = new Array(this.moduleCount); for (var d = 0; d < this.moduleCount; d++) { this.modules[d] = new Array(this.moduleCount); for (var e = 0; e < this.moduleCount; e++)this.modules[d][e] = null } this.setupPositionProbePattern(0, 0), this.setupPositionProbePattern(this.moduleCount - 7, 0), this.setupPositionProbePattern(0, this.moduleCount - 7), this.setupPositionAdjustPattern(), this.setupTimingPattern(), this.setupTypeInfo(a, c), this.typeNumber >= 7 && this.setupTypeNumber(a), null == this.dataCache && (this.dataCache = b.createData(this.typeNumber, this.errorCorrectLevel, this.dataList)), this.mapData(this.dataCache, c) }, setupPositionProbePattern: function (a, b) { for (var c = -1; 7 >= c; c++)if (!(-1 >= a + c || this.moduleCount <= a + c)) for (var d = -1; 7 >= d; d++)-1 >= b + d || this.moduleCount <= b + d || (this.modules[a + c][b + d] = c >= 0 && 6 >= c && (0 == d || 6 == d) || d >= 0 && 6 >= d && (0 == c || 6 == c) || c >= 2 && 4 >= c && d >= 2 && 4 >= d ? !0 : !1) }, getBestMaskPattern: function () { for (var a = 0, b = 0, c = 0; 8 > c; c++) { this.makeImpl(!0, c); var d = f.getLostPoint(this); (0 == c || a > d) && (a = d, b = c) } return b }, createMovieClip: function (a, b, c) { var d = a.createEmptyMovieClip(b, c), e = 1; this.make(); for (var f = 0; f < this.modules.length; f++)for (var g = f * e, h = 0; h < this.modules[f].length; h++) { var i = h * e, j = this.modules[f][h]; j && (d.beginFill(0, 100), d.moveTo(i, g), d.lineTo(i + e, g), d.lineTo(i + e, g + e), d.lineTo(i, g + e), d.endFill()) } return d }, setupTimingPattern: function () { for (var a = 8; a < this.moduleCount - 8; a++)null == this.modules[a][6] && (this.modules[a][6] = 0 == a % 2); for (var b = 8; b < this.moduleCount - 8; b++)null == this.modules[6][b] && (this.modules[6][b] = 0 == b % 2) }, setupPositionAdjustPattern: function () { for (var a = f.getPatternPosition(this.typeNumber), b = 0; b < a.length; b++)for (var c = 0; c < a.length; c++) { var d = a[b], e = a[c]; if (null == this.modules[d][e]) for (var g = -2; 2 >= g; g++)for (var h = -2; 2 >= h; h++)this.modules[d + g][e + h] = -2 == g || 2 == g || -2 == h || 2 == h || 0 == g && 0 == h ? !0 : !1 } }, setupTypeNumber: function (a) { for (var b = f.getBCHTypeNumber(this.typeNumber), c = 0; 18 > c; c++) { var d = !a && 1 == (1 & b >> c); this.modules[Math.floor(c / 3)][c % 3 + this.moduleCount - 8 - 3] = d } for (var c = 0; 18 > c; c++) { var d = !a && 1 == (1 & b >> c); this.modules[c % 3 + this.moduleCount - 8 - 3][Math.floor(c / 3)] = d } }, setupTypeInfo: function (a, b) { for (var c = this.errorCorrectLevel << 3 | b, d = f.getBCHTypeInfo(c), e = 0; 15 > e; e++) { var g = !a && 1 == (1 & d >> e); 6 > e ? this.modules[e][8] = g : 8 > e ? this.modules[e + 1][8] = g : this.modules[this.moduleCount - 15 + e][8] = g } for (var e = 0; 15 > e; e++) { var g = !a && 1 == (1 & d >> e); 8 > e ? this.modules[8][this.moduleCount - e - 1] = g : 9 > e ? this.modules[8][15 - e - 1 + 1] = g : this.modules[8][15 - e - 1] = g } this.modules[this.moduleCount - 8][8] = !a }, mapData: function (a, b) { for (var c = -1, d = this.moduleCount - 1, e = 7, g = 0, h = this.moduleCount - 1; h > 0; h -= 2)for (6 == h && h--; ;) { for (var i = 0; 2 > i; i++)if (null == this.modules[d][h - i]) { var j = !1; g < a.length && (j = 1 == (1 & a[g] >>> e)); var k = f.getMask(b, d, h - i); k && (j = !j), this.modules[d][h - i] = j, e--, -1 == e && (g++, e = 7) } if (d += c, 0 > d || this.moduleCount <= d) { d -= c, c = -c; break } } } }, b.PAD0 = 236, b.PAD1 = 17, b.createData = function (a, c, d) { for (var e = j.getRSBlocks(a, c), g = new k, h = 0; h < d.length; h++) { var i = d[h]; g.put(i.mode, 4), g.put(i.getLength(), f.getLengthInBits(i.mode, a)), i.write(g) } for (var l = 0, h = 0; h < e.length; h++)l += e[h].dataCount; if (g.getLengthInBits() > 8 * l) throw new Error("code length overflow. (" + g.getLengthInBits() + ">" + 8 * l + ")"); for (g.getLengthInBits() + 4 <= 8 * l && g.put(0, 4); 0 != g.getLengthInBits() % 8;)g.putBit(!1); for (; ;) { if (g.getLengthInBits() >= 8 * l) break; if (g.put(b.PAD0, 8), g.getLengthInBits() >= 8 * l) break; g.put(b.PAD1, 8) } return b.createBytes(g, e) }, b.createBytes = function (a, b) { for (var c = 0, d = 0, e = 0, g = new Array(b.length), h = new Array(b.length), j = 0; j < b.length; j++) { var k = b[j].dataCount, l = b[j].totalCount - k; d = Math.max(d, k), e = Math.max(e, l), g[j] = new Array(k); for (var m = 0; m < g[j].length; m++)g[j][m] = 255 & a.buffer[m + c]; c += k; var n = f.getErrorCorrectPolynomial(l), o = new i(g[j], n.getLength() - 1), p = o.mod(n); h[j] = new Array(n.getLength() - 1); for (var m = 0; m < h[j].length; m++) { var q = m + p.getLength() - h[j].length; h[j][m] = q >= 0 ? p.get(q) : 0 } } for (var r = 0, m = 0; m < b.length; m++)r += b[m].totalCount; for (var s = new Array(r), t = 0, m = 0; d > m; m++)for (var j = 0; j < b.length; j++)m < g[j].length && (s[t++] = g[j][m]); for (var m = 0; e > m; m++)for (var j = 0; j < b.length; j++)m < h[j].length && (s[t++] = h[j][m]); return s }; for (var c = { MODE_NUMBER: 1, MODE_ALPHA_NUM: 2, MODE_8BIT_BYTE: 4, MODE_KANJI: 8 }, d = { L: 1, M: 0, Q: 3, H: 2 }, e = { PATTERN000: 0, PATTERN001: 1, PATTERN010: 2, PATTERN011: 3, PATTERN100: 4, PATTERN101: 5, PATTERN110: 6, PATTERN111: 7 }, f = { PATTERN_POSITION_TABLE: [[], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34], [6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62], [6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82], [6, 30, 58, 86], [6, 34, 62, 90], [6, 28, 50, 72, 94], [6, 26, 50, 74, 98], [6, 30, 54, 78, 102], [6, 28, 54, 80, 106], [6, 32, 58, 84, 110], [6, 30, 58, 86, 114], [6, 34, 62, 90, 118], [6, 26, 50, 74, 98, 122], [6, 30, 54, 78, 102, 126], [6, 26, 52, 78, 104, 130], [6, 30, 56, 82, 108, 134], [6, 34, 60, 86, 112, 138], [6, 30, 58, 86, 114, 142], [6, 34, 62, 90, 118, 146], [6, 30, 54, 78, 102, 126, 150], [6, 24, 50, 76, 102, 128, 154], [6, 28, 54, 80, 106, 132, 158], [6, 32, 58, 84, 110, 136, 162], [6, 26, 54, 82, 110, 138, 166], [6, 30, 58, 86, 114, 142, 170]], G15: 1335, G18: 7973, G15_MASK: 21522, getBCHTypeInfo: function (a) { for (var b = a << 10; f.getBCHDigit(b) - f.getBCHDigit(f.G15) >= 0;)b ^= f.G15 << f.getBCHDigit(b) - f.getBCHDigit(f.G15); return (a << 10 | b) ^ f.G15_MASK }, getBCHTypeNumber: function (a) { for (var b = a << 12; f.getBCHDigit(b) - f.getBCHDigit(f.G18) >= 0;)b ^= f.G18 << f.getBCHDigit(b) - f.getBCHDigit(f.G18); return a << 12 | b }, getBCHDigit: function (a) { for (var b = 0; 0 != a;)b++, a >>>= 1; return b }, getPatternPosition: function (a) { return f.PATTERN_POSITION_TABLE[a - 1] }, getMask: function (a, b, c) { switch (a) { case e.PATTERN000: return 0 == (b + c) % 2; case e.PATTERN001: return 0 == b % 2; case e.PATTERN010: return 0 == c % 3; case e.PATTERN011: return 0 == (b + c) % 3; case e.PATTERN100: return 0 == (Math.floor(b / 2) + Math.floor(c / 3)) % 2; case e.PATTERN101: return 0 == b * c % 2 + b * c % 3; case e.PATTERN110: return 0 == (b * c % 2 + b * c % 3) % 2; case e.PATTERN111: return 0 == (b * c % 3 + (b + c) % 2) % 2; default: throw new Error("bad maskPattern:" + a) } }, getErrorCorrectPolynomial: function (a) { for (var b = new i([1], 0), c = 0; a > c; c++)b = b.multiply(new i([1, g.gexp(c)], 0)); return b }, getLengthInBits: function (a, b) { if (b >= 1 && 10 > b) switch (a) { case c.MODE_NUMBER: return 10; case c.MODE_ALPHA_NUM: return 9; case c.MODE_8BIT_BYTE: return 8; case c.MODE_KANJI: return 8; default: throw new Error("mode:" + a) } else if (27 > b) switch (a) { case c.MODE_NUMBER: return 12; case c.MODE_ALPHA_NUM: return 11; case c.MODE_8BIT_BYTE: return 16; case c.MODE_KANJI: return 10; default: throw new Error("mode:" + a) } else { if (!(41 > b)) throw new Error("type:" + b); switch (a) { case c.MODE_NUMBER: return 14; case c.MODE_ALPHA_NUM: return 13; case c.MODE_8BIT_BYTE: return 16; case c.MODE_KANJI: return 12; default: throw new Error("mode:" + a) } } }, getLostPoint: function (a) { for (var b = a.getModuleCount(), c = 0, d = 0; b > d; d++)for (var e = 0; b > e; e++) { for (var f = 0, g = a.isDark(d, e), h = -1; 1 >= h; h++)if (!(0 > d + h || d + h >= b)) for (var i = -1; 1 >= i; i++)0 > e + i || e + i >= b || (0 != h || 0 != i) && g == a.isDark(d + h, e + i) && f++; f > 5 && (c += 3 + f - 5) } for (var d = 0; b - 1 > d; d++)for (var e = 0; b - 1 > e; e++) { var j = 0; a.isDark(d, e) && j++, a.isDark(d + 1, e) && j++, a.isDark(d, e + 1) && j++, a.isDark(d + 1, e + 1) && j++, (0 == j || 4 == j) && (c += 3) } for (var d = 0; b > d; d++)for (var e = 0; b - 6 > e; e++)a.isDark(d, e) && !a.isDark(d, e + 1) && a.isDark(d, e + 2) && a.isDark(d, e + 3) && a.isDark(d, e + 4) && !a.isDark(d, e + 5) && a.isDark(d, e + 6) && (c += 40); for (var e = 0; b > e; e++)for (var d = 0; b - 6 > d; d++)a.isDark(d, e) && !a.isDark(d + 1, e) && a.isDark(d + 2, e) && a.isDark(d + 3, e) && a.isDark(d + 4, e) && !a.isDark(d + 5, e) && a.isDark(d + 6, e) && (c += 40); for (var k = 0, e = 0; b > e; e++)for (var d = 0; b > d; d++)a.isDark(d, e) && k++; var l = Math.abs(100 * k / b / b - 50) / 5; return c += 10 * l } }, g = { glog: function (a) { if (1 > a) throw new Error("glog(" + a + ")"); return g.LOG_TABLE[a] }, gexp: function (a) { for (; 0 > a;)a += 255; for (; a >= 256;)a -= 255; return g.EXP_TABLE[a] }, EXP_TABLE: new Array(256), LOG_TABLE: new Array(256) }, h = 0; 8 > h; h++)g.EXP_TABLE[h] = 1 << h; for (var h = 8; 256 > h; h++)g.EXP_TABLE[h] = g.EXP_TABLE[h - 4] ^ g.EXP_TABLE[h - 5] ^ g.EXP_TABLE[h - 6] ^ g.EXP_TABLE[h - 8]; for (var h = 0; 255 > h; h++)g.LOG_TABLE[g.EXP_TABLE[h]] = h; i.prototype = { get: function (a) { return this.num[a] }, getLength: function () { return this.num.length }, multiply: function (a) { for (var b = new Array(this.getLength() + a.getLength() - 1), c = 0; c < this.getLength(); c++)for (var d = 0; d < a.getLength(); d++)b[c + d] ^= g.gexp(g.glog(this.get(c)) + g.glog(a.get(d))); return new i(b, 0) }, mod: function (a) { if (this.getLength() - a.getLength() < 0) return this; for (var b = g.glog(this.get(0)) - g.glog(a.get(0)), c = new Array(this.getLength()), d = 0; d < this.getLength(); d++)c[d] = this.get(d); for (var d = 0; d < a.getLength(); d++)c[d] ^= g.gexp(g.glog(a.get(d)) + b); return new i(c, 0).mod(a) } }, j.RS_BLOCK_TABLE = [[1, 26, 19], [1, 26, 16], [1, 26, 13], [1, 26, 9], [1, 44, 34], [1, 44, 28], [1, 44, 22], [1, 44, 16], [1, 70, 55], [1, 70, 44], [2, 35, 17], [2, 35, 13], [1, 100, 80], [2, 50, 32], [2, 50, 24], [4, 25, 9], [1, 134, 108], [2, 67, 43], [2, 33, 15, 2, 34, 16], [2, 33, 11, 2, 34, 12], [2, 86, 68], [4, 43, 27], [4, 43, 19], [4, 43, 15], [2, 98, 78], [4, 49, 31], [2, 32, 14, 4, 33, 15], [4, 39, 13, 1, 40, 14], [2, 121, 97], [2, 60, 38, 2, 61, 39], [4, 40, 18, 2, 41, 19], [4, 40, 14, 2, 41, 15], [2, 146, 116], [3, 58, 36, 2, 59, 37], [4, 36, 16, 4, 37, 17], [4, 36, 12, 4, 37, 13], [2, 86, 68, 2, 87, 69], [4, 69, 43, 1, 70, 44], [6, 43, 19, 2, 44, 20], [6, 43, 15, 2, 44, 16], [4, 101, 81], [1, 80, 50, 4, 81, 51], [4, 50, 22, 4, 51, 23], [3, 36, 12, 8, 37, 13], [2, 116, 92, 2, 117, 93], [6, 58, 36, 2, 59, 37], [4, 46, 20, 6, 47, 21], [7, 42, 14, 4, 43, 15], [4, 133, 107], [8, 59, 37, 1, 60, 38], [8, 44, 20, 4, 45, 21], [12, 33, 11, 4, 34, 12], [3, 145, 115, 1, 146, 116], [4, 64, 40, 5, 65, 41], [11, 36, 16, 5, 37, 17], [11, 36, 12, 5, 37, 13], [5, 109, 87, 1, 110, 88], [5, 65, 41, 5, 66, 42], [5, 54, 24, 7, 55, 25], [11, 36, 12], [5, 122, 98, 1, 123, 99], [7, 73, 45, 3, 74, 46], [15, 43, 19, 2, 44, 20], [3, 45, 15, 13, 46, 16], [1, 135, 107, 5, 136, 108], [10, 74, 46, 1, 75, 47], [1, 50, 22, 15, 51, 23], [2, 42, 14, 17, 43, 15], [5, 150, 120, 1, 151, 121], [9, 69, 43, 4, 70, 44], [17, 50, 22, 1, 51, 23], [2, 42, 14, 19, 43, 15], [3, 141, 113, 4, 142, 114], [3, 70, 44, 11, 71, 45], [17, 47, 21, 4, 48, 22], [9, 39, 13, 16, 40, 14], [3, 135, 107, 5, 136, 108], [3, 67, 41, 13, 68, 42], [15, 54, 24, 5, 55, 25], [15, 43, 15, 10, 44, 16], [4, 144, 116, 4, 145, 117], [17, 68, 42], [17, 50, 22, 6, 51, 23], [19, 46, 16, 6, 47, 17], [2, 139, 111, 7, 140, 112], [17, 74, 46], [7, 54, 24, 16, 55, 25], [34, 37, 13], [4, 151, 121, 5, 152, 122], [4, 75, 47, 14, 76, 48], [11, 54, 24, 14, 55, 25], [16, 45, 15, 14, 46, 16], [6, 147, 117, 4, 148, 118], [6, 73, 45, 14, 74, 46], [11, 54, 24, 16, 55, 25], [30, 46, 16, 2, 47, 17], [8, 132, 106, 4, 133, 107], [8, 75, 47, 13, 76, 48], [7, 54, 24, 22, 55, 25], [22, 45, 15, 13, 46, 16], [10, 142, 114, 2, 143, 115], [19, 74, 46, 4, 75, 47], [28, 50, 22, 6, 51, 23], [33, 46, 16, 4, 47, 17], [8, 152, 122, 4, 153, 123], [22, 73, 45, 3, 74, 46], [8, 53, 23, 26, 54, 24], [12, 45, 15, 28, 46, 16], [3, 147, 117, 10, 148, 118], [3, 73, 45, 23, 74, 46], [4, 54, 24, 31, 55, 25], [11, 45, 15, 31, 46, 16], [7, 146, 116, 7, 147, 117], [21, 73, 45, 7, 74, 46], [1, 53, 23, 37, 54, 24], [19, 45, 15, 26, 46, 16], [5, 145, 115, 10, 146, 116], [19, 75, 47, 10, 76, 48], [15, 54, 24, 25, 55, 25], [23, 45, 15, 25, 46, 16], [13, 145, 115, 3, 146, 116], [2, 74, 46, 29, 75, 47], [42, 54, 24, 1, 55, 25], [23, 45, 15, 28, 46, 16], [17, 145, 115], [10, 74, 46, 23, 75, 47], [10, 54, 24, 35, 55, 25], [19, 45, 15, 35, 46, 16], [17, 145, 115, 1, 146, 116], [14, 74, 46, 21, 75, 47], [29, 54, 24, 19, 55, 25], [11, 45, 15, 46, 46, 16], [13, 145, 115, 6, 146, 116], [14, 74, 46, 23, 75, 47], [44, 54, 24, 7, 55, 25], [59, 46, 16, 1, 47, 17], [12, 151, 121, 7, 152, 122], [12, 75, 47, 26, 76, 48], [39, 54, 24, 14, 55, 25], [22, 45, 15, 41, 46, 16], [6, 151, 121, 14, 152, 122], [6, 75, 47, 34, 76, 48], [46, 54, 24, 10, 55, 25], [2, 45, 15, 64, 46, 16], [17, 152, 122, 4, 153, 123], [29, 74, 46, 14, 75, 47], [49, 54, 24, 10, 55, 25], [24, 45, 15, 46, 46, 16], [4, 152, 122, 18, 153, 123], [13, 74, 46, 32, 75, 47], [48, 54, 24, 14, 55, 25], [42, 45, 15, 32, 46, 16], [20, 147, 117, 4, 148, 118], [40, 75, 47, 7, 76, 48], [43, 54, 24, 22, 55, 25], [10, 45, 15, 67, 46, 16], [19, 148, 118, 6, 149, 119], [18, 75, 47, 31, 76, 48], [34, 54, 24, 34, 55, 25], [20, 45, 15, 61, 46, 16]], j.getRSBlocks = function (a, b) { var c = j.getRsBlockTable(a, b); if (void 0 == c) throw new Error("bad rs block @ typeNumber:" + a + "/errorCorrectLevel:" + b); for (var d = c.length / 3, e = [], f = 0; d > f; f++)for (var g = c[3 * f + 0], h = c[3 * f + 1], i = c[3 * f + 2], k = 0; g > k; k++)e.push(new j(h, i)); return e }, j.getRsBlockTable = function (a, b) { switch (b) { case d.L: return j.RS_BLOCK_TABLE[4 * (a - 1) + 0]; case d.M: return j.RS_BLOCK_TABLE[4 * (a - 1) + 1]; case d.Q: return j.RS_BLOCK_TABLE[4 * (a - 1) + 2]; case d.H: return j.RS_BLOCK_TABLE[4 * (a - 1) + 3]; default: return void 0 } }, k.prototype = { get: function (a) { var b = Math.floor(a / 8); return 1 == (1 & this.buffer[b] >>> 7 - a % 8) }, put: function (a, b) { for (var c = 0; b > c; c++)this.putBit(1 == (1 & a >>> b - c - 1)) }, getLengthInBits: function () { return this.length }, putBit: function (a) { var b = Math.floor(this.length / 8); this.buffer.length <= b && this.buffer.push(0), a && (this.buffer[b] |= 128 >>> this.length % 8), this.length++ } }; var l = [[17, 14, 11, 7], [32, 26, 20, 14], [53, 42, 32, 24], [78, 62, 46, 34], [106, 84, 60, 44], [134, 106, 74, 58], [154, 122, 86, 64], [192, 152, 108, 84], [230, 180, 130, 98], [271, 213, 151, 119], [321, 251, 177, 137], [367, 287, 203, 155], [425, 331, 241, 177], [458, 362, 258, 194], [520, 412, 292, 220], [586, 450, 322, 250], [644, 504, 364, 280], [718, 560, 394, 310], [792, 624, 442, 338], [858, 666, 482, 382], [929, 711, 509, 403], [1003, 779, 565, 439], [1091, 857, 611, 461], [1171, 911, 661, 511], [1273, 997, 715, 535], [1367, 1059, 751, 593], [1465, 1125, 805, 625], [1528, 1190, 868, 658], [1628, 1264, 908, 698], [1732, 1370, 982, 742], [1840, 1452, 1030, 790], [1952, 1538, 1112, 842], [2068, 1628, 1168, 898], [2188, 1722, 1228, 958], [2303, 1809, 1283, 983], [2431, 1911, 1351, 1051], [2563, 1989, 1423, 1093], [2699, 2099, 1499, 1139], [2809, 2213, 1579, 1219], [2953, 2331, 1663, 1273]], o = function () { var a = function (a, b) { this._el = a, this._htOption = b }; return a.prototype.draw = function (a) { function g(a, b) { var c = document.createElementNS("http://www.w3.org/2000/svg", a); for (var d in b) b.hasOwnProperty(d) && c.setAttribute(d, b[d]); return c } var b = this._htOption, c = this._el, d = a.getModuleCount(); Math.floor(b.width / d), Math.floor(b.height / d), this.clear(); var h = g("svg", { viewBox: "0 0 " + String(d) + " " + String(d), width: "100%", height: "100%", fill: b.colorLight }); h.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:xlink", "http://www.w3.org/1999/xlink"), c.appendChild(h), h.appendChild(g("rect", { fill: b.colorDark, width: "1", height: "1", id: "template" })); for (var i = 0; d > i; i++)for (var j = 0; d > j; j++)if (a.isDark(i, j)) { var k = g("use", { x: String(i), y: String(j) }); k.setAttributeNS("http://www.w3.org/1999/xlink", "href", "#template"), h.appendChild(k) } }, a.prototype.clear = function () { for (; this._el.hasChildNodes();)this._el.removeChild(this._el.lastChild) }, a }(), p = "svg" === document.documentElement.tagName.toLowerCase(), q = p ? o : m() ? function () { function a() { this._elImage.src = this._elCanvas.toDataURL("image/png"), this._elImage.style.display = "block", this._elCanvas.style.display = "none" } function d(a, b) { var c = this; if (c._fFail = b, c._fSuccess = a, null === c._bSupportDataURI) { var d = document.createElement("img"), e = function () { c._bSupportDataURI = !1, c._fFail && _fFail.call(c) }, f = function () { c._bSupportDataURI = !0, c._fSuccess && c._fSuccess.call(c) }; return d.onabort = e, d.onerror = e, d.onload = f, d.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==", void 0 } c._bSupportDataURI === !0 && c._fSuccess ? c._fSuccess.call(c) : c._bSupportDataURI === !1 && c._fFail && c._fFail.call(c) } if (this._android && this._android <= 2.1) { var b = 1 / window.devicePixelRatio, c = CanvasRenderingContext2D.prototype.drawImage; CanvasRenderingContext2D.prototype.drawImage = function (a, d, e, f, g, h, i, j) { if ("nodeName" in a && /img/i.test(a.nodeName)) for (var l = arguments.length - 1; l >= 1; l--)arguments[l] = arguments[l] * b; else "undefined" == typeof j && (arguments[1] *= b, arguments[2] *= b, arguments[3] *= b, arguments[4] *= b); c.apply(this, arguments) } } var e = function (a, b) { this._bIsPainted = !1, this._android = n(), this._htOption = b, this._elCanvas = document.createElement("canvas"), this._elCanvas.width = b.width, this._elCanvas.height = b.height, a.appendChild(this._elCanvas), this._el = a, this._oContext = this._elCanvas.getContext("2d"), this._bIsPainted = !1, this._elImage = document.createElement("img"), this._elImage.style.display = "none", this._el.appendChild(this._elImage), this._bSupportDataURI = null }; return e.prototype.draw = function (a) { var b = this._elImage, c = this._oContext, d = this._htOption, e = a.getModuleCount(), f = d.width / e, g = d.height / e, h = Math.round(f), i = Math.round(g); b.style.display = "none", this.clear(); for (var j = 0; e > j; j++)for (var k = 0; e > k; k++) { var l = a.isDark(j, k), m = k * f, n = j * g; c.strokeStyle = l ? d.colorDark : d.colorLight, c.lineWidth = 1, c.fillStyle = l ? d.colorDark : d.colorLight, c.fillRect(m, n, f, g), c.strokeRect(Math.floor(m) + .5, Math.floor(n) + .5, h, i), c.strokeRect(Math.ceil(m) - .5, Math.ceil(n) - .5, h, i) } this._bIsPainted = !0 }, e.prototype.makeImage = function () { this._bIsPainted && d.call(this, a) }, e.prototype.isPainted = function () { return this._bIsPainted }, e.prototype.clear = function () { this._oContext.clearRect(0, 0, this._elCanvas.width, this._elCanvas.height), this._bIsPainted = !1 }, e.prototype.round = function (a) { return a ? Math.floor(1e3 * a) / 1e3 : a }, e }() : function () { var a = function (a, b) { this._el = a, this._htOption = b }; return a.prototype.draw = function (a) { for (var b = this._htOption, c = this._el, d = a.getModuleCount(), e = Math.floor(b.width / d), f = Math.floor(b.height / d), g = ['<table style="border:0;border-collapse:collapse;">'], h = 0; d > h; h++) { g.push("<tr>"); for (var i = 0; d > i; i++)g.push('<td style="border:0;border-collapse:collapse;padding:0;margin:0;width:' + e + "px;height:" + f + "px;background-color:" + (a.isDark(h, i) ? b.colorDark : b.colorLight) + ';"></td>'); g.push("</tr>") } g.push("</table>"), c.innerHTML = g.join(""); var j = c.childNodes[0], k = (b.width - j.offsetWidth) / 2, l = (b.height - j.offsetHeight) / 2; k > 0 && l > 0 && (j.style.margin = l + "px " + k + "px") }, a.prototype.clear = function () { this._el.innerHTML = "" }, a }(); QRCode = function (a, b) { if (this._htOption = { width: 256, height: 256, typeNumber: 4, colorDark: "#000000", colorLight: "#ffffff", correctLevel: d.H }, "string" == typeof b && (b = { text: b }), b) for (var c in b) this._htOption[c] = b[c]; "string" == typeof a && (a = document.getElementById(a)), this._android = n(), this._el = a, this._oQRCode = null, this._oDrawing = new q(this._el, this._htOption), this._htOption.text && this.makeCode(this._htOption.text) }, QRCode.prototype.makeCode = function (a) { this._oQRCode = new b(r(a, this._htOption.correctLevel), this._htOption.correctLevel), this._oQRCode.addData(a), this._oQRCode.make(), this._el.title = a, this._oDrawing.draw(this._oQRCode), this.makeImage() }, QRCode.prototype.makeImage = function () { "function" == typeof this._oDrawing.makeImage && (!this._android || this._android >= 3) && this._oDrawing.makeImage() }, QRCode.prototype.clear = function () { this._oDrawing.clear() }, QRCode.CorrectLevel = d }();
+    </script>
+    <script>
+        (function (factory) { if (typeof exports === "object") { module.exports = factory() } else if (typeof define === "function" && define.amd) { define(factory) } else { var glob; try { glob = window } catch (e) { glob = self } glob.SparkMD5 = factory() } })(function (undefined) { "use strict"; var add32 = function (a, b) { return a + b & 4294967295 }, hex_chr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"]; function cmn(q, a, b, x, s, t) { a = add32(add32(a, q), add32(x, t)); return add32(a << s | a >>> 32 - s, b) } function md5cycle(x, k) { var a = x[0], b = x[1], c = x[2], d = x[3]; a += (b & c | ~b & d) + k[0] - 680876936 | 0; a = (a << 7 | a >>> 25) + b | 0; d += (a & b | ~a & c) + k[1] - 389564586 | 0; d = (d << 12 | d >>> 20) + a | 0; c += (d & a | ~d & b) + k[2] + 606105819 | 0; c = (c << 17 | c >>> 15) + d | 0; b += (c & d | ~c & a) + k[3] - 1044525330 | 0; b = (b << 22 | b >>> 10) + c | 0; a += (b & c | ~b & d) + k[4] - 176418897 | 0; a = (a << 7 | a >>> 25) + b | 0; d += (a & b | ~a & c) + k[5] + 1200080426 | 0; d = (d << 12 | d >>> 20) + a | 0; c += (d & a | ~d & b) + k[6] - 1473231341 | 0; c = (c << 17 | c >>> 15) + d | 0; b += (c & d | ~c & a) + k[7] - 45705983 | 0; b = (b << 22 | b >>> 10) + c | 0; a += (b & c | ~b & d) + k[8] + 1770035416 | 0; a = (a << 7 | a >>> 25) + b | 0; d += (a & b | ~a & c) + k[9] - 1958414417 | 0; d = (d << 12 | d >>> 20) + a | 0; c += (d & a | ~d & b) + k[10] - 42063 | 0; c = (c << 17 | c >>> 15) + d | 0; b += (c & d | ~c & a) + k[11] - 1990404162 | 0; b = (b << 22 | b >>> 10) + c | 0; a += (b & c | ~b & d) + k[12] + 1804603682 | 0; a = (a << 7 | a >>> 25) + b | 0; d += (a & b | ~a & c) + k[13] - 40341101 | 0; d = (d << 12 | d >>> 20) + a | 0; c += (d & a | ~d & b) + k[14] - 1502002290 | 0; c = (c << 17 | c >>> 15) + d | 0; b += (c & d | ~c & a) + k[15] + 1236535329 | 0; b = (b << 22 | b >>> 10) + c | 0; a += (b & d | c & ~d) + k[1] - 165796510 | 0; a = (a << 5 | a >>> 27) + b | 0; d += (a & c | b & ~c) + k[6] - 1069501632 | 0; d = (d << 9 | d >>> 23) + a | 0; c += (d & b | a & ~b) + k[11] + 643717713 | 0; c = (c << 14 | c >>> 18) + d | 0; b += (c & a | d & ~a) + k[0] - 373897302 | 0; b = (b << 20 | b >>> 12) + c | 0; a += (b & d | c & ~d) + k[5] - 701558691 | 0; a = (a << 5 | a >>> 27) + b | 0; d += (a & c | b & ~c) + k[10] + 38016083 | 0; d = (d << 9 | d >>> 23) + a | 0; c += (d & b | a & ~b) + k[15] - 660478335 | 0; c = (c << 14 | c >>> 18) + d | 0; b += (c & a | d & ~a) + k[4] - 405537848 | 0; b = (b << 20 | b >>> 12) + c | 0; a += (b & d | c & ~d) + k[9] + 568446438 | 0; a = (a << 5 | a >>> 27) + b | 0; d += (a & c | b & ~c) + k[14] - 1019803690 | 0; d = (d << 9 | d >>> 23) + a | 0; c += (d & b | a & ~b) + k[3] - 187363961 | 0; c = (c << 14 | c >>> 18) + d | 0; b += (c & a | d & ~a) + k[8] + 1163531501 | 0; b = (b << 20 | b >>> 12) + c | 0; a += (b & d | c & ~d) + k[13] - 1444681467 | 0; a = (a << 5 | a >>> 27) + b | 0; d += (a & c | b & ~c) + k[2] - 51403784 | 0; d = (d << 9 | d >>> 23) + a | 0; c += (d & b | a & ~b) + k[7] + 1735328473 | 0; c = (c << 14 | c >>> 18) + d | 0; b += (c & a | d & ~a) + k[12] - 1926607734 | 0; b = (b << 20 | b >>> 12) + c | 0; a += (b ^ c ^ d) + k[5] - 378558 | 0; a = (a << 4 | a >>> 28) + b | 0; d += (a ^ b ^ c) + k[8] - 2022574463 | 0; d = (d << 11 | d >>> 21) + a | 0; c += (d ^ a ^ b) + k[11] + 1839030562 | 0; c = (c << 16 | c >>> 16) + d | 0; b += (c ^ d ^ a) + k[14] - 35309556 | 0; b = (b << 23 | b >>> 9) + c | 0; a += (b ^ c ^ d) + k[1] - 1530992060 | 0; a = (a << 4 | a >>> 28) + b | 0; d += (a ^ b ^ c) + k[4] + 1272893353 | 0; d = (d << 11 | d >>> 21) + a | 0; c += (d ^ a ^ b) + k[7] - 155497632 | 0; c = (c << 16 | c >>> 16) + d | 0; b += (c ^ d ^ a) + k[10] - 1094730640 | 0; b = (b << 23 | b >>> 9) + c | 0; a += (b ^ c ^ d) + k[13] + 681279174 | 0; a = (a << 4 | a >>> 28) + b | 0; d += (a ^ b ^ c) + k[0] - 358537222 | 0; d = (d << 11 | d >>> 21) + a | 0; c += (d ^ a ^ b) + k[3] - 722521979 | 0; c = (c << 16 | c >>> 16) + d | 0; b += (c ^ d ^ a) + k[6] + 76029189 | 0; b = (b << 23 | b >>> 9) + c | 0; a += (b ^ c ^ d) + k[9] - 640364487 | 0; a = (a << 4 | a >>> 28) + b | 0; d += (a ^ b ^ c) + k[12] - 421815835 | 0; d = (d << 11 | d >>> 21) + a | 0; c += (d ^ a ^ b) + k[15] + 530742520 | 0; c = (c << 16 | c >>> 16) + d | 0; b += (c ^ d ^ a) + k[2] - 995338651 | 0; b = (b << 23 | b >>> 9) + c | 0; a += (c ^ (b | ~d)) + k[0] - 198630844 | 0; a = (a << 6 | a >>> 26) + b | 0; d += (b ^ (a | ~c)) + k[7] + 1126891415 | 0; d = (d << 10 | d >>> 22) + a | 0; c += (a ^ (d | ~b)) + k[14] - 1416354905 | 0; c = (c << 15 | c >>> 17) + d | 0; b += (d ^ (c | ~a)) + k[5] - 57434055 | 0; b = (b << 21 | b >>> 11) + c | 0; a += (c ^ (b | ~d)) + k[12] + 1700485571 | 0; a = (a << 6 | a >>> 26) + b | 0; d += (b ^ (a | ~c)) + k[3] - 1894986606 | 0; d = (d << 10 | d >>> 22) + a | 0; c += (a ^ (d | ~b)) + k[10] - 1051523 | 0; c = (c << 15 | c >>> 17) + d | 0; b += (d ^ (c | ~a)) + k[1] - 2054922799 | 0; b = (b << 21 | b >>> 11) + c | 0; a += (c ^ (b | ~d)) + k[8] + 1873313359 | 0; a = (a << 6 | a >>> 26) + b | 0; d += (b ^ (a | ~c)) + k[15] - 30611744 | 0; d = (d << 10 | d >>> 22) + a | 0; c += (a ^ (d | ~b)) + k[6] - 1560198380 | 0; c = (c << 15 | c >>> 17) + d | 0; b += (d ^ (c | ~a)) + k[13] + 1309151649 | 0; b = (b << 21 | b >>> 11) + c | 0; a += (c ^ (b | ~d)) + k[4] - 145523070 | 0; a = (a << 6 | a >>> 26) + b | 0; d += (b ^ (a | ~c)) + k[11] - 1120210379 | 0; d = (d << 10 | d >>> 22) + a | 0; c += (a ^ (d | ~b)) + k[2] + 718787259 | 0; c = (c << 15 | c >>> 17) + d | 0; b += (d ^ (c | ~a)) + k[9] - 343485551 | 0; b = (b << 21 | b >>> 11) + c | 0; x[0] = a + x[0] | 0; x[1] = b + x[1] | 0; x[2] = c + x[2] | 0; x[3] = d + x[3] | 0 } function md5blk(s) { var md5blks = [], i; for (i = 0; i < 64; i += 4) { md5blks[i >> 2] = s.charCodeAt(i) + (s.charCodeAt(i + 1) << 8) + (s.charCodeAt(i + 2) << 16) + (s.charCodeAt(i + 3) << 24) } return md5blks } function md5blk_array(a) { var md5blks = [], i; for (i = 0; i < 64; i += 4) { md5blks[i >> 2] = a[i] + (a[i + 1] << 8) + (a[i + 2] << 16) + (a[i + 3] << 24) } return md5blks } function md51(s) { var n = s.length, state = [1732584193, -271733879, -1732584194, 271733878], i, length, tail, tmp, lo, hi; for (i = 64; i <= n; i += 64) { md5cycle(state, md5blk(s.substring(i - 64, i))) } s = s.substring(i - 64); length = s.length; tail = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; for (i = 0; i < length; i += 1) { tail[i >> 2] |= s.charCodeAt(i) << (i % 4 << 3) } tail[i >> 2] |= 128 << (i % 4 << 3); if (i > 55) { md5cycle(state, tail); for (i = 0; i < 16; i += 1) { tail[i] = 0 } } tmp = n * 8; tmp = tmp.toString(16).match(/(.*?)(.{0,8})$/); lo = parseInt(tmp[2], 16); hi = parseInt(tmp[1], 16) || 0; tail[14] = lo; tail[15] = hi; md5cycle(state, tail); return state } function md51_array(a) { var n = a.length, state = [1732584193, -271733879, -1732584194, 271733878], i, length, tail, tmp, lo, hi; for (i = 64; i <= n; i += 64) { md5cycle(state, md5blk_array(a.subarray(i - 64, i))) } a = i - 64 < n ? a.subarray(i - 64) : new Uint8Array(0); length = a.length; tail = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; for (i = 0; i < length; i += 1) { tail[i >> 2] |= a[i] << (i % 4 << 3) } tail[i >> 2] |= 128 << (i % 4 << 3); if (i > 55) { md5cycle(state, tail); for (i = 0; i < 16; i += 1) { tail[i] = 0 } } tmp = n * 8; tmp = tmp.toString(16).match(/(.*?)(.{0,8})$/); lo = parseInt(tmp[2], 16); hi = parseInt(tmp[1], 16) || 0; tail[14] = lo; tail[15] = hi; md5cycle(state, tail); return state } function rhex(n) { var s = "", j; for (j = 0; j < 4; j += 1) { s += hex_chr[n >> j * 8 + 4 & 15] + hex_chr[n >> j * 8 & 15] } return s } function hex(x) { var i; for (i = 0; i < x.length; i += 1) { x[i] = rhex(x[i]) } return x.join("") } if (hex(md51("hello")) !== "5d41402abc4b2a76b9719d911017c592") { add32 = function (x, y) { var lsw = (x & 65535) + (y & 65535), msw = (x >> 16) + (y >> 16) + (lsw >> 16); return msw << 16 | lsw & 65535 } } if (typeof ArrayBuffer !== "undefined" && !ArrayBuffer.prototype.slice) { (function () { function clamp(val, length) { val = val | 0 || 0; if (val < 0) { return Math.max(val + length, 0) } return Math.min(val, length) } ArrayBuffer.prototype.slice = function (from, to) { var length = this.byteLength, begin = clamp(from, length), end = length, num, target, targetArray, sourceArray; if (to !== undefined) { end = clamp(to, length) } if (begin > end) { return new ArrayBuffer(0) } num = end - begin; target = new ArrayBuffer(num); targetArray = new Uint8Array(target); sourceArray = new Uint8Array(this, begin, num); targetArray.set(sourceArray); return target } })() } function toUtf8(str) { if (/[\u0080-\uFFFF]/.test(str)) { str = unescape(encodeURIComponent(str)) } return str } function utf8Str2ArrayBuffer(str, returnUInt8Array) { var length = str.length, buff = new ArrayBuffer(length), arr = new Uint8Array(buff), i; for (i = 0; i < length; i += 1) { arr[i] = str.charCodeAt(i) } return returnUInt8Array ? arr : buff } function arrayBuffer2Utf8Str(buff) { return String.fromCharCode.apply(null, new Uint8Array(buff)) } function concatenateArrayBuffers(first, second, returnUInt8Array) { var result = new Uint8Array(first.byteLength + second.byteLength); result.set(new Uint8Array(first)); result.set(new Uint8Array(second), first.byteLength); return returnUInt8Array ? result : result.buffer } function hexToBinaryString(hex) { var bytes = [], length = hex.length, x; for (x = 0; x < length - 1; x += 2) { bytes.push(parseInt(hex.substr(x, 2), 16)) } return String.fromCharCode.apply(String, bytes) } function SparkMD5() { this.reset() } SparkMD5.prototype.append = function (str) { this.appendBinary(toUtf8(str)); return this }; SparkMD5.prototype.appendBinary = function (contents) { this._buff += contents; this._length += contents.length; var length = this._buff.length, i; for (i = 64; i <= length; i += 64) { md5cycle(this._hash, md5blk(this._buff.substring(i - 64, i))) } this._buff = this._buff.substring(i - 64); return this }; SparkMD5.prototype.end = function (raw) { var buff = this._buff, length = buff.length, i, tail = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ret; for (i = 0; i < length; i += 1) { tail[i >> 2] |= buff.charCodeAt(i) << (i % 4 << 3) } this._finish(tail, length); ret = hex(this._hash); if (raw) { ret = hexToBinaryString(ret) } this.reset(); return ret }; SparkMD5.prototype.reset = function () { this._buff = ""; this._length = 0; this._hash = [1732584193, -271733879, -1732584194, 271733878]; return this }; SparkMD5.prototype.getState = function () { return { buff: this._buff, length: this._length, hash: this._hash.slice() } }; SparkMD5.prototype.setState = function (state) { this._buff = state.buff; this._length = state.length; this._hash = state.hash; return this }; SparkMD5.prototype.destroy = function () { delete this._hash; delete this._buff; delete this._length }; SparkMD5.prototype._finish = function (tail, length) { var i = length, tmp, lo, hi; tail[i >> 2] |= 128 << (i % 4 << 3); if (i > 55) { md5cycle(this._hash, tail); for (i = 0; i < 16; i += 1) { tail[i] = 0 } } tmp = this._length * 8; tmp = tmp.toString(16).match(/(.*?)(.{0,8})$/); lo = parseInt(tmp[2], 16); hi = parseInt(tmp[1], 16) || 0; tail[14] = lo; tail[15] = hi; md5cycle(this._hash, tail) }; SparkMD5.hash = function (str, raw) { return SparkMD5.hashBinary(toUtf8(str), raw) }; SparkMD5.hashBinary = function (content, raw) { var hash = md51(content), ret = hex(hash); return raw ? hexToBinaryString(ret) : ret }; SparkMD5.ArrayBuffer = function () { this.reset() }; SparkMD5.ArrayBuffer.prototype.append = function (arr) { var buff = concatenateArrayBuffers(this._buff.buffer, arr, true), length = buff.length, i; this._length += arr.byteLength; for (i = 64; i <= length; i += 64) { md5cycle(this._hash, md5blk_array(buff.subarray(i - 64, i))) } this._buff = i - 64 < length ? new Uint8Array(buff.buffer.slice(i - 64)) : new Uint8Array(0); return this }; SparkMD5.ArrayBuffer.prototype.end = function (raw) { var buff = this._buff, length = buff.length, tail = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], i, ret; for (i = 0; i < length; i += 1) { tail[i >> 2] |= buff[i] << (i % 4 << 3) } this._finish(tail, length); ret = hex(this._hash); if (raw) { ret = hexToBinaryString(ret) } this.reset(); return ret }; SparkMD5.ArrayBuffer.prototype.reset = function () { this._buff = new Uint8Array(0); this._length = 0; this._hash = [1732584193, -271733879, -1732584194, 271733878]; return this }; SparkMD5.ArrayBuffer.prototype.getState = function () { var state = SparkMD5.prototype.getState.call(this); state.buff = arrayBuffer2Utf8Str(state.buff); return state }; SparkMD5.ArrayBuffer.prototype.setState = function (state) { state.buff = utf8Str2ArrayBuffer(state.buff, true); return SparkMD5.prototype.setState.call(this, state) }; SparkMD5.ArrayBuffer.prototype.destroy = SparkMD5.prototype.destroy; SparkMD5.ArrayBuffer.prototype._finish = SparkMD5.prototype._finish; SparkMD5.ArrayBuffer.hash = function (arr, raw) { var hash = md51_array(new Uint8Array(arr)), ret = hex(hash); return raw ? hexToBinaryString(ret) : ret }; return SparkMD5 });
+    </script>
+    <script>
+        const defaultStatus = {
+            serialNumber: 'UNKNOWN',
+            macAddress: 'UNKNOWN',
+            version: 'UNKNOWN',
+            ipAddress: 'UNKNOWN',
+            hostname: 'UNKNOWN',
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const brightnessSlider = document.getElementById('brightness');
+            brightnessSlider.dataset.changing = 'false';
+
+            const serialNumber = document.getElementById('serialNumber');
+            const macAddress = document.getElementById('macAddress');
+            const firmwareVersion = document.getElementById('version');
+            const ipAddress = document.getElementById('ipAddress');
+            const hostname = document.getElementById('hostname');
+            const errorText = document.getElementById('errorText');
+            const error = document.getElementById('error');
+            const firmwareUpdate = document.getElementById('firmwareUpdate');
+            const fileElement = document.getElementById('file');
+            const md5Element = document.getElementById('md5');
+
+            fileElement.addEventListener('change', function (event) {
+                var blobSlice = File.prototype.slice || File.prototype.mozSlice || File.prototype.webkitSlice,
+                    file = this.files[0],
+                    chunkSize = 1024, // 1Kb
+                    chunks = Math.ceil(file.size / chunkSize),
+                    currentChunk = 0,
+                    spark = new SparkMD5.ArrayBuffer(),
+                    fileReader = new FileReader();
+
+                fileReader.onload = function (e) {
+                    console.log('read chunk nr', currentChunk + 1, 'of', chunks);
+                    spark.append(e.target.result);
+                    currentChunk++;
+
+                    if (currentChunk < chunks) {
+                        loadNext();
+                    } else {
+                        console.log('finished loading');
+
+                        var md5 = spark.end();
+                        console.info('computed hash', md5);
+                        md5Element.value = md5;
+                    }
+                };
+
+                fileReader.onerror = function () {
+                    console.warn('oops, something went wrong.');
+                };
+
+                function loadNext() {
+                    var start = currentChunk * chunkSize,
+                        end = ((start + chunkSize) >= file.size) ? file.size : start + chunkSize;
+
+                    fileReader.readAsArrayBuffer(blobSlice.call(file, start, end));
+                }
+
+                loadNext();
+            });
+
+            function updateValues(data) {
+                const changing = brightnessSlider.dataset.changing;
+                if (changing === 'false') {
+                    if (data.brightness !== undefined) {
+                        brightnessSlider.disabled = false;
+                        brightnessSlider.value = data.brightness;
+                    }
+                    else {
+                        brightnessSlider.disabled = true;
+                    }
+                }
+
+                if (serialNumber.innerText !== data.serialNumber)
+                    serialNumber.innerText = data.serialNumber;
+                if (macAddress.innerText !== data.macAddress)
+                    macAddress.innerText = data.macAddress;
+                if (firmwareVersion.innerText !== data.version)
+                    firmwareVersion.innerText = data.version;
+                if (ipAddress.innerText !== data.ipAddress)
+                    ipAddress.innerText = data.ipAddress;
+                if (hostname.innerText !== data.hostname) {
+                    hostname.innerText = data.hostname;
+
+                    document.getElementById("qrcode").innerHTML = "";
+
+                    if (data.hostname !== defaultStatus.hostname) {
+                        new QRCode("qrcode", {
+                            text: `http://${data.hostname}`,
+                            width: 128,
+                            height: 128,
+                            colorDark: "#000000",
+                            colorLight: "#ffffff",
+                            correctLevel: QRCode.CorrectLevel.H
+                        });
+                    }
+                }
+            }
+
+            function checkStatus() {
+                fetch('/status')
+                    .then((res) => res.json())
+                    .then((data) => {
+                        error.style.display = 'none';
+                        updateValues(data);
+                    })
+                    .catch((err) => {
+                        error.style.display = 'block';
+                        errorText.innerText = 'Error: ' + err;
+                        updateValues(defaultStatus);
+                    });
+
+            }
+
+            let interval = setInterval(checkStatus, 1000);
+
+            firmwareUpdate.addEventListener('submit', () => {
+                clearInterval(interval);
+            });
+
+            brightnessSlider.addEventListener('mousedown', function (evt) {
+                clearInterval(interval);
+                evt.target.dataset.changing = 'true';
+            });
+
+            brightnessSlider.addEventListener('touchstart', function (evt) {
+                clearInterval(interval);
+                evt.target.dataset.changing = 'true';
+            });
+
+            brightnessSlider.addEventListener('change', function (evt) {
+                if (evt.target.value === '0') {
+                    fetch('/api/v1/covercalibrator/0/calibratoroff', { method: 'PUT' })
+                        .finally(() => {
+                            evt.target.dataset.changing = 'false';
+                            interval = setInterval(checkStatus, 1000);
+                        });
+                } else {
+                    const formData = new FormData();
+                    formData.append('Brightness', evt.target.value);
+
+                    fetch('/api/v1/covercalibrator/0/calibratoron', {
+                        method: 'PUT',
+                        body: formData
+                    })
+                        .finally(() => {
+                            evt.target.dataset.changing = 'false';
+                            interval = setInterval(checkStatus, 1000);
+                        });
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="48px" height="48px">
+            <path
+                d="M500.37,768.28l-65.83,237.51c-.18,.64,.3,1.27,.96,1.27h130.28c27.03,0,53.39-2.84,78.81-8.23,.68-.14,1.01-.92,.65-1.51l-140.04-229.69c-1.21-1.98-4.19-1.58-4.84,.65Z" />
+            <path
+                d="M970.69,690.32c-.05-1.06-.1-2.11-.16-3.16-.05-1.05-.11-2.1-.17-3.16-.06-1.05-.13-2.1-.2-3.16-.07-1.06-.14-2.11-.22-3.16-.38-5.27-.85-10.53-1.4-15.78-.38-3.59-.79-7.18-1.24-10.77-.46-3.59-.95-7.18-1.47-10.77-.17-1.2-.35-2.4-.54-3.6-.37-2.4-.75-4.79-1.16-7.18h0c-1.38-8.25-2.96-16.47-4.74-24.68-1.33-6.16-2.77-12.3-4.32-18.43-.39-1.53-.78-3.06-1.18-4.59-1.21-4.59-2.47-9.16-3.79-13.73-.44-1.52-.89-3.04-1.34-4.56-2.73-9.1-5.7-18.15-8.9-27.11-4.8-13.45-10.14-26.72-16-39.74-1.74-3.86-3.52-7.69-5.34-11.5-1.82-3.81-3.69-7.59-5.61-11.35-1.92-3.76-3.88-7.49-5.88-11.19-1-1.86-2.01-3.7-3.04-5.54-3.08-5.51-6.25-10.96-9.52-16.33-1.39-2.29-2.81-4.56-4.24-6.83-.71-1.13-1.43-2.26-2.16-3.39-.73-1.12-1.46-2.24-2.19-3.35-7.07-11.22-14.72-22.03-22.89-32.41-.17-.64-.15-1.29,.04-1.88,.16-.53,.44-1.01,.82-1.41,.11-.12,.23-.23,.36-.34h0c.13-.11,.26-.2,.41-.28,.29-.17,.61-.29,.95-.37,.49-.11,1.03-.1,1.6,.04,4.01,1,8.09,2.21,12.23,3.6,1.38,.46,2.77,.94,4.16,1.45,.8,.28,1.6,.58,2.4,.88,8.24,3.07,16.68,6.77,25.25,10.88,.14,.07,.28,.12,.41,.16,1.1,.35,2.12-.03,2.8-.74,.95-1,1.2-2.66-.02-3.9-1.11-1.13-2.23-2.26-3.37-3.38-2.25-2.25-4.53-4.48-6.84-6.68-1.15-1.11-2.31-2.2-3.47-3.29-3.49-3.26-7.03-6.48-10.62-9.63-3.6-3.15-7.24-6.25-10.92-9.3-7.37-6.08-14.93-11.95-22.64-17.6-9.33-6.83-18.89-13.33-28.66-19.51-2.44-1.55-4.89-3.07-7.36-4.58-3.7-2.26-7.42-4.47-11.17-6.64-2.5-1.45-5.02-2.87-7.54-4.28-1.26-.71-2.52-1.4-3.79-2.1-5.08-2.78-10.2-5.5-15.37-8.14-1.72-.88-3.45-1.75-5.18-2.62-2.77-1.38-5.56-2.75-8.36-4.09-2.8-1.34-5.61-2.66-8.43-3.95-2.83-1.3-5.66-2.57-8.51-3.81-2.85-1.24-5.71-2.46-8.58-3.65-14.35-5.95-28.99-11.21-43.87-15.58-1.11-.33-2.23-.65-3.35-.97-3.36-.95-6.72-1.86-10.1-2.72-9.01-2.3-18.1-4.26-27.26-5.83-6.64-1.15-13.3-2.12-19.96-2.94-2.22-.27-4.44-.53-6.66-.77-7.85-.86-15.71-1.52-23.58-2.02-5.41-.35-10.83-.63-16.24-.84-.18-.01-.35-.02-.52-.02-1.77-.07-3.53-.13-5.3-.19-2.97-.09-5.94-.17-8.92-.23-14.17-.32-28.37-.3-42.56-.19-5.54,.05-11.08,.1-16.63,.16-2.81,.02-5.63,.05-8.44,.08-2.09,.02-4.18,.04-6.27,.06-6.27,.06-12.54,.09-18.8,.09h-76.48c-1.68,0-2.98-1.49-2.75-3.16,2.28-16.88,4.48-33.84,4.76-51,.02-1.3,.04-2.6,.05-3.91,.07-7.87-.06-15.73-.39-23.59-.08-1.96-.17-3.93-.28-5.89-.05-1.07-.11-2.14-.18-3.22-.29-4.92-.66-9.83-1.11-14.74-.1-1.08-.2-2.16-.31-3.24-.19-1.97-.39-3.94-.61-5.91-.71-6.47-1.55-12.92-2.52-19.36-.66-4.43-1.34-8.91-2.09-13.38-.3-1.79-.61-3.58-.93-5.37h0c-.8-4.48-1.7-8.94-2.73-13.36-.82-3.53-1.73-7.04-2.75-10.5-.22-.74-.44-1.48-.67-2.21-.29-.93-.58-1.84-.89-2.76-.18-.55-.36-1.09-.55-1.64-.03-.1-.07-.2-.12-.29-.13-.28-.31-.52-.51-.7-.68-.63-1.65-.76-2.46-.45-.09,.03-.18,.07-.26,.12-.21,.1-.41,.24-.58,.41-.36,.35-.61,.83-.68,1.43-.05,.44-.11,.89-.17,1.34-.01,.14-.03,.28-.05,.42-.21,1.48-.45,2.98-.72,4.51-.2,1.28-.4,2.57-.6,3.86-.2,1.28-.42,2.57-.63,3.86-.49,3.03-1.01,6.05-1.56,9.07-5.5,30.25-13.24,60.07-23.08,89.19-.6,1.8-1.22,3.6-1.85,5.39-1.29,3.74-2.63,7.46-3.99,11.17-1.41,3.82-2.86,7.63-4.34,11.43-3.73,9.54-7.68,18.99-11.86,28.34-6.38,14.25-13.27,28.28-20.66,42.04-1.19,2.21-2.39,4.41-3.6,6.61-2.12,3.85-4.28,7.67-6.49,11.47-6.6,11.4-13.56,22.59-20.86,33.56-2.24,3.36-4.51,6.67-6.82,9.94-2.31,3.27-4.66,6.49-7.04,9.68h-.01c-1.36,1.83-2.73,3.64-4.11,5.43,0,.01,0,.01,0,.01-2.06,2.7-4.15,5.38-6.26,8.03-11.26,14.19-23.04,27.88-34.87,41.81-1.48,1.74-2.96,3.49-4.44,5.23-1.48,1.76-2.96,3.51-4.44,5.27-2.66,3.17-5.4,6.33-8.11,9.54-.9,1.07-1.81,2.14-2.71,3.22-.71,.87-1.43,1.74-2.15,2.61-1.76,2.18-3.5,4.39-5.17,6.63-.33,.45-.66,.9-1,1.36-.65,.9-1.3,1.81-1.93,2.73h-.01c-.51,.75-1,1.48-1.49,2.23-3.17,4.84-5.94,9.89-8.04,15.25-.52,1.32-1.01,2.65-1.47,3.99-.23,.67-.46,1.35-.67,2.02-.27,.84-.53,1.69-.78,2.53-.5,1.7-.95,3.4-1.37,5.12-.21,.86-.41,1.72-.6,2.58-.78,3.55-1.4,7.14-1.89,10.74-.17,1.23-.32,2.46-.45,3.7-.09,.78-.17,1.57-.25,2.35-.12,1.25-.23,2.5-.32,3.75-.13,1.66-.23,3.32-.31,4.99-.88,17.34,.27,34.83-.75,52.14-.08,1.38-.18,2.75-.29,4.13-.05,.7-.11,1.41-.18,2.11-.13,1.38-.27,2.76-.44,4.14-.09,.81-.19,1.61-.31,2.42-.08,.58-.16,1.16-.25,1.74-.33,2.19-.7,4.37-1.1,6.53-.13,.72-.28,1.44-.42,2.16-.58,2.87-1.22,5.72-1.94,8.54-.35,1.41-.72,2.81-1.1,4.21-.39,1.41-.79,2.81-1.21,4.21-.41,1.39-.84,2.77-1.28,4.14-.22,.7-.45,1.4-.68,2.1-.91,2.75-1.87,5.48-2.87,8.19-.76,2.06-1.54,4.1-2.35,6.13-.53,1.34-1.08,2.68-1.63,4.02-3.34,8.07-7.01,16.01-10.86,23.89-1.27,2.62-2.57,5.23-3.88,7.83-7.87,15.68-16.2,31.16-23.62,46.9-8.35,17.71-21.82,38.54-18.43,59.02h0c.13,.77,.28,1.52,.48,2.24v.02c.56,2.17,1.39,4.15,2.45,5.96t0,.01c.18,.31,.37,.62,.56,.92,.58,.91,1.21,1.77,1.89,2.6h0c.6,.74,1.24,1.45,1.92,2.13,1.01,1.02,2.09,1.99,3.23,2.91,.28,.22,.56,.44,.85,.66,.85,.65,1.72,1.28,2.61,1.89,2.69,1.83,5.56,3.48,8.44,5.08,1.23,.68,2.47,1.34,3.72,1.99h.01c1.26,.65,2.52,1.27,3.8,1.88h.01c1.28,.61,2.57,1.2,3.87,1.78h.01c1.95,.87,3.93,1.69,5.93,2.48,.67,.26,1.34,.52,2.01,.78,.68,.25,1.36,.51,2.03,.76,1.01,.37,2.03,.74,3.06,1.09,2.04,.72,4.1,1.4,6.17,2.04,1.03,.32,2.07,.64,3.11,.95,1.29,.39,2.6,.77,3.9,1.14l.57,.15c1.18,.33,2.36,.65,3.54,.96,.21,.06,.42,.11,.62,.16,1.3,.34,2.6,.67,3.91,.99,.79,.19,1.57,.38,2.36,.57,5.49,1.32,10.98,2.46,16.39,3.48,4.7,.89,9.43,1.65,14.17,2.27,.52,.07,1.04,.14,1.56,.2,2.39,.31,4.78,.58,7.18,.81,.72,.07,1.45,.14,2.17,.2,12.34,1.12,24.77,1.34,37.15,.67,2.28-.13,4.56-.31,6.85-.57,1.21-.14,2.43-.29,3.64-.45,1.07-.15,2.14-.31,3.21-.48,.28-.04,.56-.09,.84-.13,1.59-.26,3.19-.55,4.78-.86,1.09-.22,2.17-.44,3.26-.68,.26-.06,.52-.11,.77-.17,.79-.18,1.58-.36,2.38-.55,1.77-.41,3.53-.86,5.29-1.32,2.55-.68,5.08-1.41,7.6-2.18,.01,0,.01-.01,.02-.01,2.3-.69,4.58-1.43,6.84-2.2,1.13-.39,2.26-.78,3.39-1.17,2.24-.78,4.47-1.6,6.67-2.43,.14-.05,.26-.12,.37-.2,0-.01,.01-.01,.01-.01l2.93-1.53c.13-.07,.24-.15,.33-.24,.14-.13,.24-.29,.3-.45,.2-.49,.1-1.07-.25-1.47-.08-.09-.17-.17-.27-.23-.14-.09-.3-.15-.48-.19-1.64-.33-3.55-.95-5.5-2.08-.39-.23-.78-.47-1.17-.74-.2-.14-.39-.28-.59-.42-.58-.43-1.16-.92-1.73-1.47h0c-.28-.27-.5-.56-.67-.9-.29-.55-.43-1.2-.42-1.9,0-.13,0-.26,.02-.39,.01-.19,.03-.38,.06-.58,.05-.37,.15-.76,.28-1.15,.12-.37,.26-.73,.44-1.1,.12-.24,.25-.48,.39-.72,.28-.49,.62-.97,1.01-1.44,.1-.11,.2-.22,.3-.33l56.27-62.7,32.68-36.41,2.73-2.97,4.63-5.03c.06-.06,.1-.12,.15-.19,.05-.06,.09-.13,.14-.19,.6-.99,.39-2.24-.38-3-.1-.1-.21-.19-.34-.28-.07-.05-.15-.1-.24-.14-.13-.06-.26-.12-.4-.16-.14-.04-.29-.07-.44-.09-1.14-.13-2.39-.31-3.65-.57-.63-.13-1.26-.27-1.87-.43-.54-.14-1.08-.3-1.59-.48-.51-.18-1.01-.37-1.48-.58h-.01c-.33-.15-.65-.31-.95-.48,0,0,0,0,0,0-.3-.17-.59-.35-.86-.54-.12-.08-.23-.16-.33-.23-.18-.14-.34-.28-.5-.44-.16-.14-.31-.3-.44-.47h0c-.28-.33-.49-.68-.65-1.05-.42-1.47-.35-3.07,.22-4.57,.13-.35,.29-.7,.48-1.03,.27-.48,.59-.94,.97-1.37l133.27-150.51,2.42-3c.13-.16,.23-.34,.29-.52,.04-.09,.06-.19,.08-.29,.03-.21,.03-.42,0-.62-.02-.12-.05-.23-.1-.34h0c-.09-.22-.22-.41-.39-.57-.2-.2-.45-.35-.74-.43-.16-.05-.33-.1-.5-.15-.48-.16-.97-.37-1.41-.65-.15-.09-.3-.19-.44-.29-.14-.1-.27-.22-.39-.34-.24-.23-.46-.5-.63-.8-.72-1.97-.52-4,.72-5.34l25.09-27.11c.11-.12,.22-.23,.34-.33,.36-.31,.76-.55,1.2-.72,1.09-.44,2.4-.45,3.71-.08,.37,.1,.74,.24,1.1,.41,.24,.11,.48,.23,.72,.37,.71,.42,1.38,.95,1.99,1.6,.71,.74,1.42,1.49,2.11,2.24,.19,.19,.37,.38,.54,.57,.18,.19,.37,.39,.55,.58,.56,.59,1.21,1.04,1.93,1.35,.86,.37,1.81,.53,2.77,.45,.18-.01,.36-.04,.54-.07,12.45-2.34,26.06-1.13,39.29,3.54,1.26,.45,2.52,.93,3.77,1.44,1.26,.51,2.51,1.05,3.76,1.62,1.25,.58,2.48,1.18,3.71,1.82,7.39,3.81,14.51,8.76,21.06,14.82,1.19,1.1,2.34,2.22,3.46,3.37,.42,.43,.84,.86,1.25,1.29,.82,.87,1.62,1.75,2.4,2.64,.78,.89,1.54,1.79,2.28,2.7,.74,.91,1.46,1.83,2.16,2.75,.36,.47,.7,.93,1.04,1.4,.91,1.25,1.78,2.52,2.61,3.79h0c.84,1.28,1.63,2.57,2.39,3.86,.38,.65,.76,1.31,1.11,1.97,1.44,2.61,2.74,5.27,3.89,7.95h0c.57,1.35,1.11,2.7,1.61,4.05,.25,.68,.49,1.36,.72,2.04,.46,1.36,.88,2.72,1.27,4.08,.2,.69,.38,1.38,.55,2.06,.35,1.37,.66,2.73,.93,4.1,1.21,6.09,1.65,12.18,1.32,18.1-.05,.87-.39,1.6-.9,2.17-.22,.23-.47,.44-.74,.61-.19,.11-.38,.21-.58,.29-1.07,.42-2.35,.31-3.4-.53-3.43-2.74-6.91-5.6-10.43-8.57-1.41-1.18-2.82-2.38-4.24-3.6-.71-.6-1.43-1.21-2.14-1.83-1.63-1.4-3.27-2.83-4.92-4.28-1.65-1.44-3.31-2.91-4.98-4.4-4.17-3.71-8.38-7.54-12.65-11.47-1.58-1.45-3.16-2.92-4.74-4.4-1.59-1.48-3.18-2.97-4.78-4.48-.09-.09-.18-.16-.28-.22-.09-.06-.19-.11-.29-.15-.66-.26-1.36-.06-1.83,.39-.42,.41-.65,1-.49,1.63,.04,.14,.09,.27,.16,.41,12.04,22.75,34.08,77.69-6.19,119.33l-63.3,65.49c-.28,.29-.6,.5-.94,.64,0,0,0-.01,0,0-.09,.04-.17,.07-.26,.09-.72,.22-1.5,.12-2.15-.24-.25-.14-.48-.32-.68-.54-.05-.07-.1-.13-.15-.19-.2-.25-.35-.53-.45-.86-.02-.08-.05-.18-.07-.27-.38-1.76-.88-3.48-1.48-5.15-.4-1.12-.85-2.22-1.34-3.29-2.2-4.82-5.3-9.16-9.07-12.79-1.65-1.59-3.43-3.04-5.32-4.35-.54-.37-1.09-.73-1.65-1.08-.28-.18-.56-.35-.84-.51-.78-.46-1.58-.9-2.39-1.31-.81-.41-1.64-.79-2.48-1.15-.84-.35-1.69-.69-2.56-.99-4.34-1.52-9-2.34-13.86-2.34-1.76,0-3.52,.11-5.25,.33-1.04,.13-2.08,.31-3.1,.52-.31,.06-.62,.12-.92,.2-.9,.21-1.8,.45-2.68,.71h-.01c-.66,.2-1.32,.42-1.98,.65-1.96,.7-3.86,1.54-5.7,2.51-.54,.28-1.09,.59-1.62,.9-1.06,.63-2.1,1.3-3.1,2.01-1.01,.72-1.98,1.48-2.92,2.28-.98,.83-1.92,1.72-2.82,2.64-.45,.46-.89,.94-1.33,1.42-.97,1.09-1.88,2.24-2.74,3.45-.29,.4-.57,.8-.84,1.21-.2,.31-.4,.62-.59,.93-.19,.33-.39,.65-.58,.97-.38,.64-.72,1.29-1.05,1.94-.22,.44-.43,.89-.64,1.33-.61,1.34-1.14,2.7-1.58,4.09-.17,.52-.33,1.04-.48,1.57-.29,1.05-.54,2.12-.75,3.19-.1,.54-.19,1.08-.28,1.62-.43,2.82-.57,5.71-.45,8.62,.05,1.2,.17,2.39,.32,3.57,.05,.39,.11,.79,.17,1.18,.06,.42,.14,.85,.21,1.27,.15,.85,.32,1.69,.49,2.53,.18,.84,.37,1.68,.56,2.52,.12,.52,.25,1.04,.37,1.57,.37,1.56,.74,3.12,1.08,4.68,.54,2.5,1,5.01,1.2,7.55,.53,6.45-.49,12.75-2.59,18.7-.43,1.22-.91,2.44-1.43,3.63-.35,.8-.71,1.59-1.1,2.37-.39,.79-.79,1.56-1.21,2.33-.62,1.15-1.29,2.28-1.98,3.38-2.33,3.71-5.02,7.18-7.93,10.38l-2.95,3.1-54.74,57.4c-1.6,1.68-3.22,3.33-4.85,4.97-.66,.67-1.45,1.16-2.29,1.45-2.06,.74-4.45,.34-6.17-1.23l-1.7-1.56c-1.99-1.82-3.97-3.66-5.95-5.49l-.23-.2-15.81-14.64h-.01c-.14-.14-.28-.23-.44-.29-.42-.17-.88-.1-1.24,.13h-.01c-.07,.06-.14,.12-.21,.18-.2,.18-.33,.42-.39,.68-.06,.22-.06,.48,.03,.74,1.78,5.4,3.49,14.08,1.05,23.83-.07,.29-.15,.58-.23,.87-.16,.58-.34,1.17-.53,1.76-.1,.3-.2,.59-.3,.89-.76,2.16-1.74,4.35-2.97,6.56t-.01,.01c-.35,.64-.73,1.28-1.14,1.92,0,.01-.01,.01-.01,.01-.25,.4-.51,.8-.78,1.21-.81,1.21-1.7,2.41-2.69,3.62t-.01,.01c-.19,.24-.39,.48-.6,.73-.62,.72-1.26,1.44-1.94,2.16l-29.91,31.7-102.58,101.84s-.02,.02-.03,.04c-.27,.32-.04,.82,.38,.82h213.47c.39,0,.75-.24,.91-.59l.02-.04s.03-.08,.04-.12l3.85-14.72,2.97-11.33,61.09-242.13c.09-.37,.11-.75,.05-1.11-.06-.43-.24-.84-.5-1.2t0-.01c-.11-.14-.22-.26-.35-.39-.13-.12-.27-.23-.42-.33-.75-.48-1.47-1-2.15-1.55-.3-.24-.6-.5-.88-.76-.15-.13-.29-.26-.43-.41-.25-.24-.5-.49-.74-.74h0c-.65-.69-1.24-1.41-1.78-2.17-.13-.19-.26-.39-.4-.59-.33-.48-.64-.98-.92-1.49-.28-.51-.54-1.04-.79-1.58-.19-.43-.37-.87-.54-1.32,0-.01-.01-.01-.01-.01-.11-.29-.21-.58-.3-.87-.15-.46-.28-.93-.4-1.41-.03-.1-.05-.21-.07-.31-.11-.44-.2-.89-.27-1.35-.23-1.4-.32-2.85-.26-4.33,0-.28,.02-.57,.04-.85,.09-1.23,.3-2.44,.6-3.6,.06-.24,.13-.47,.19-.7,.13-.46,.29-.91,.45-1.36t.01,0c.18-.5,.39-1,.61-1.48,1.09-2.39,2.61-4.54,4.47-6.36,.44-.44,.91-.86,1.39-1.26,1.69-1.4,3.6-2.53,5.65-3.36,.59-.24,1.19-.45,1.8-.63,1.53-.46,3.13-.75,4.78-.85,2.69-.17,5.29,.17,7.7,.92,.42,.13,.83,.27,1.24,.43,.81,.31,1.59,.66,2.35,1.06,.38,.2,.76,.42,1.12,.64h.01c2.04,1.26,3.86,2.84,5.39,4.67t0,.01c.16,.2,.33,.39,.48,.6,.31,.4,.61,.82,.89,1.25,.14,.21,.28,.43,.41,.65t0,.01c.36,.59,.69,1.19,.99,1.81,.31,.62,.57,1.26,.81,1.92,.23,.65,.44,1.31,.62,1.99,.52,2.05,.75,4.21,.64,6.45-.03,.66-.1,1.31-.19,1.96-.18,1.29-.49,2.54-.91,3.75-.5,1.51-1.18,2.94-2.01,4.28-.32,.53-.67,1.04-1.04,1.54t-.01,0c-.37,.5-.76,.99-1.17,1.45-.21,.24-.42,.47-.64,.69-.32,.33-.54,.73-.67,1.15-.02,.08-.04,.17-.06,.25-.02,.09-.03,.19-.04,.28-.06,.56,.06,1.13,.34,1.63l146.61,259.7c.03,.06,.08,.12,.13,.17,.2,.24,.52,.37,.85,.33,.05,0,.1-.01,.15-.02,2.7-.69,5.39-1.41,8.07-2.17,1.06-.29,2.12-.59,3.17-.9,1.39-.4,2.77-.81,4.15-1.22,1.77-.54,3.54-1.08,5.31-1.64,1.76-.56,3.52-1.13,5.27-1.72,1.75-.58,3.5-1.18,5.24-1.79,1.32-.46,2.63-.93,3.94-1.41,3.89-1.4,7.74-2.87,11.57-4.41,1.53-.61,3.05-1.23,4.57-1.86,.33-.14,.66-.27,.99-.41,2.82-1.19,5.62-2.4,8.4-3.65,2.21-.98,4.41-1.99,6.59-3.02,4.83-2.28,9.6-4.66,14.32-7.13,1.61-.85,3.22-1.7,4.82-2.57,1.6-.87,3.19-1.75,4.78-2.64,1.59-.89,3.16-1.8,4.74-2.71,3.21-1.87,6.4-3.79,9.55-5.74,3.01-1.88,6-3.79,8.96-5.74,.05-.04,.11-.08,.17-.11,2.97-1.97,5.9-3.98,8.81-6.02,1.48-1.04,2.96-2.1,4.42-3.16,2.94-2.12,5.84-4.28,8.71-6.5,.02-.01,.04-.03,.06-.04,2.85-2.19,5.66-4.42,8.44-6.69,1.41-1.15,2.8-2.31,4.19-3.46,1.38-1.16,2.75-2.32,4.11-3.5,.7-.25,1.42-.25,2.08-.06,.36,.1,.71,.27,1.02,.48,.23,.16,.45,.34,.63,.55,.1,.1,.19,.21,.27,.32,.62,.87,.85,2.03,.36,3.26-2.42,6.12-4.91,12.06-7.27,17.47-.3,.67-.59,1.34-.88,1.99-.86,1.98-1.71,3.87-2.53,5.68-.27,.6-.54,1.19-.8,1.76h0c-.26,.59-.52,1.15-.78,1.7-.51,1.11-1,2.17-1.47,3.18-.52,1.13-.26,2.22,.39,2.97,.06,.07,.12,.14,.19,.2,.03,.03,.06,.06,.09,.08,.07,.07,.15,.13,.23,.19,.59,.42,1.34,.62,2.1,.49,.15-.03,.31-.07,.46-.13,.15-.06,.3-.13,.45-.22,.15-.09,.29-.19,.44-.31,.37-.32,.73-.64,1.09-.96,.36-.32,.72-.64,1.09-.96,3.62-3.21,7.19-6.51,10.71-9.9,1.41-1.36,2.81-2.73,4.2-4.11,2.26-2.26,4.5-4.54,6.71-6.86,.79-.83,1.59-1.67,2.38-2.51,2.37-2.53,4.71-5.1,7.01-7.7,.13-.15,.26-.29,.38-.44,2.05-2.3,4.06-4.63,6.05-6.99,2.06-2.45,4.09-4.93,6.11-7.44,2-2.5,3.98-5.02,5.94-7.58,5.08-6.67,9.98-13.52,14.69-20.54,1.43-2.14,2.84-4.29,4.24-6.46,.39-.6,.77-1.21,1.15-1.81,.55-.86,1.1-1.73,1.65-2.6,1.64-2.61,3.25-5.24,4.82-7.89,.42-.72,.85-1.45,1.27-2.17,1.45-2.44,2.85-4.89,4.23-7.35,0,0,0-.02,.01-.02,1.79-3.2,3.55-6.43,5.25-9.67,.57-1.08,1.13-2.16,1.69-3.25,0-.01,0-.02,.01-.02,4.38-8.51,8.46-17.17,12.23-25.96,.84-1.97,1.68-3.96,2.49-5.95,.99-2.4,1.95-4.8,2.87-7.22,2.49-6.39,4.79-12.84,6.92-19.34,1.36-4.16,2.65-8.33,3.85-12.52,1.49-5.1,2.85-10.21,4.09-15.35,.66-2.73,1.29-5.45,1.88-8.19,.59-2.73,1.15-5.46,1.68-8.2,1.58-8.21,2.84-16.44,3.78-24.65,.23-2.05,.44-4.11,.64-6.16,.1-1.03,.19-2.06,.27-3.08,.34-4.06,.6-8.12,.77-12.16,.01-.08,.02-.17,.01-.25,.04-.99,.08-1.97,.11-2.95,0-.06,.01-.12,.02-.18,.01-.14,.02-.27,.05-.4,.03-.18,.08-.35,.14-.52,.06-.17,.13-.33,.21-.48,.08-.15,.17-.29,.27-.42,.07-.09,.14-.17,.22-.25,.07-.09,.15-.17,.23-.23,.65-.59,1.51-.9,2.37-.9,.28,0,.56,.03,.83,.1,.28,.06,.54,.17,.8,.31,.1,.05,.19,.11,.28,.17,.18,.12,.36,.27,.51,.44,.09,.08,.16,.17,.23,.26,.1,.13,.19,.26,.28,.41,3.68,6.11,7.1,12.44,10.28,18.88,3.18,6.44,6.12,12.98,8.85,19.51,.14,.33,.31,.6,.53,.83,.07,.08,.14,.15,.22,.22,.1,.09,.21,.17,.32,.24h.01c.2,.13,.42,.23,.65,.3,.07,.02,.15,.04,.23,.05,.15,.04,.31,.06,.46,.06,.47,.02,.94-.07,1.37-.28,.24-.11,.46-.26,.65-.43,.53-.47,.88-1.15,.89-2.02,.19-10.29,.05-20.57-.43-30.85Zm-821,19.04c-.38,1.64-.75,3.27-1.1,4.87-.35,1.6-.68,3.17-.98,4.7-.19,.94-.36,1.88-.52,2.79-.03,.14-.05,.29-.07,.43-.14,.78-.27,1.55-.37,2.3-.23,1.52-.41,2.97-.53,4.35-.26,2.91-.25,5.46,.12,7.53,.04,.19,.03,.37,0,.54-.01,.09-.04,.18-.08,.26-.07,.16-.17,.31-.3,.44-.04,.04-.1,.08-.15,.13-.05,.04-.1,.07-.16,.1-.55,.3-1.1,.63-1.66,.99l-.57,.39h-.01c-.49,.35-.99,.73-1.5,1.13h-.01c-.5,.41-1.01,.83-1.51,1.28t0,.01c-.19,.17-.38,.34-.57,.51-.38,.35-.77,.72-1.15,1.09-.2,.18-.39,.37-.58,.57-.26,.25-.52,.51-.78,.78-.52,.53-1.04,1.08-1.56,1.65-.79,.85-1.57,1.74-2.36,2.66-.09,.11-.2,.17-.31,.2-.31,.08-.66-.12-.73-.45-.01-.08-.02-.16,0-.25,1.86-9.82,7.68-23.37,16.16-39.48,.04-.07,.08-.12,.12-.17,.09-.09,.2-.15,.31-.18,.22-.06,.46-.01,.63,.14,.05,.03,.09,.07,.12,.12,.12,.15,.16,.34,.11,.57Zm70.99-169.33c-.35,1.22-.69,2.44-1.04,3.67-1.03,3.7-2.05,7.46-3.07,11.24-.03,.13-.08,.24-.14,.33-.13,.2-.32,.32-.53,.38-.06,.02-.12,.03-.18,.04-.04,0-.09,.01-.13,.01-.23,.02-.45-.05-.63-.19-.06-.04-.12-.09-.17-.15-.04-.05-.08-.1-.11-.15-.07-.1-.12-.22-.14-.36-.5-2.91-.9-5.82-1.2-8.74-.07-.74-.14-1.47-.21-2.2-.2-2.19-.33-4.38-.42-6.57-.46-11.32,.43-22.7,2.39-34.12,.08-.45,.15-.89,.23-1.34,.31-1.7,.63-3.4,.98-5.1,.43-2.09,.9-4.18,1.39-6.28,.53-2.26,1.1-4.51,1.71-6.77,1.26-4.7,2.67-9.4,4.21-14.11,.26-.77,1.15-.91,1.66-.49,.05,.04,.1,.08,.13,.13,.13,.14,.21,.32,.24,.53,1,7.33,2.33,14.13,4.26,19.96,.11,.31,.21,.61,.31,.92t0,.01c.32,.9,.65,1.77,1,2.62,.23,.58,.47,1.14,.71,1.68,.25,.55,.5,1.07,.76,1.59,.27,.52,.54,1.03,.81,1.53,.17,.31,.35,.61,.54,.9,.18,.3,.36,.59,.55,.87,.02,.04,.05,.08,.07,.12,.05,.08,.09,.16,.14,.23,.37,.56,.54,1.22,.48,1.86-.03,.29-.1,.57-.22,.84h-.01c-.05,.13-.12,.25-.19,.36-.21,.34-.43,.69-.65,1.05-.45,.74-.89,1.5-1.32,2.3h-.01c-.43,.8-.85,1.63-1.27,2.48-.42,.86-.84,1.75-1.26,2.67-.4,.92-.81,1.86-1.21,2.82h-.01c-.25,.61-.49,1.23-.74,1.85-.18,.47-.37,.94-.55,1.42-.55,1.43-1.1,2.91-1.62,4.43t0,.01c-.43,1.22-.85,2.46-1.27,3.73-.42,1.26-.83,2.54-1.24,3.85h0c-1.03,3.28-2.04,6.67-3.02,10.13h0Z" />
+        </svg>
+        <h1>
+            Dragon Light
+        </h1>
+    </header>
+    <section id="error">
+        <h2>Error</h2>
+        <p id="errorText"></p>
+    </section>
+    <section id="home">
+        <h2>Light Panel</h2>
+        <div class="slidecontainer">
+            <label for="brightness">Brightness</label>
+            <input type="range" min="0" max="255" value="0" class="slider" id="brightness" disabled>
+        </div>
+    </section>
+    <section id="update">
+        <h2>Firmware Update</h2>
+        <form action="/firmware" method="post" enctype="multipart/form-data" id="firmwareUpdate">
+            <p>
+                <label for="file">Select a file:</label>
+                <input type="file" id="file" name="firmware" accept=".zip">
+            </p>
+            <p>
+                <label for="md5">MD5: </label>
+                <input type="text" readonly id="md5" name="md5" size="32">
+            </p>
+            <p>
+                <input type="submit" value="Upload">
+            </p>
+        </form>
+    </section>
+    <section id="link">
+        <h2>Quick Link</h2>
+        <p>Load this page on your mobile device:</p>
+        <div id="qrcode"></div>
+    </section>
+    <section id="data">
+        <div>
+            <h4>Serial Number:</h4>
+            <p id="serialNumber">UNKNOWN</p>
+        </div>
+        <div>
+            <h4>MAC Address:</h4>
+            <p id="macAddress">UNKNOWN</p>
+        </div>
+        <div>
+            <h4>Version:</h4>
+            <p id="version">UNKNOWN</p>
+        </div>
+        <div>
+            <h4>IP Address:</h4>
+            <p id="ipAddress">UNKNOWN</p>
+        </div>
+        <div>
+            <h4>Hostname:</h4>
+            <p id="hostname">UNKNOWN</p>
+        </div>
+    </section>
+    <footer>
+        <p>
+            Copyright &copy; 2022
+        </p>
+        <a href="https://darkdragonsastro.com">
+            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2332.31 1080"
+                style="max-width: 400px; width: auto;">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: #721b1d;
+                        }
+
+                        .cls-2 {
+                            fill: #323234;
+                        }
+                    </style>
+                </defs>
+                <path class="cls-1"
+                    d="M1599.49,483.68c26.46,27.22,39.69,65.31,39.69,114.28s-13.23,87.06-39.69,114.28c-26.46,27.22-63.26,40.83-110.4,40.83-31.02,0-57.87-6.08-80.52-18.25-22.66-12.16-40.07-29.95-52.23-53.37-12.17-23.42-18.25-51.24-18.25-83.48s6.08-60.06,18.25-83.48c12.16-23.42,29.57-41.21,52.23-53.37,22.65-12.16,49.5-18.25,80.52-18.25,47.14,0,83.94,13.61,110.4,40.83Zm-151.91,51.09c-9.12,13.84-13.69,34.9-13.69,63.18s4.56,49.35,13.69,63.18c9.12,13.84,22.96,20.76,41.51,20.76s32.31-6.84,41.29-20.53c8.97-13.69,13.46-34.82,13.46-63.41s-4.49-49.73-13.46-63.41c-8.97-13.69-22.74-20.53-41.29-20.53s-32.39,6.92-41.51,20.76Z" />
+                <path class="cls-1"
+                    d="M738.56,738.39l-64.85-101.1c-1.09-1.7-.39-3.97,1.46-4.78,35.03-15.32,52.54-44.18,52.54-86.56,0-32.23-10.04-56.72-30.11-73.45-20.07-16.72-49.27-25.09-87.59-25.09h-154.19s-24.43,0-24.43,0c-2.98,0-4.43,3.65-2.25,5.68,9.97,9.25,25.46,32.46,26.68,87.84v200.99c0,3.63,2.94,6.57,6.57,6.57h78.1c3.63,0,6.57-2.94,6.57-6.57v-91.33c0-3.63,2.94-6.57,6.57-6.57h25.88c3.34,0,6.42,1.81,8.05,4.72l53.87,96.38c1.16,2.08,3.35,3.36,5.73,3.36h85.86c5.19,0,8.33-5.74,5.53-10.12Zm-113.95-165.29c-6.39,5.02-17.19,7.53-32.39,7.53h-38.59c-3.63,0-6.57-2.94-6.57-6.57v-52.1c0-3.63,2.94-6.57,6.57-6.57h38.59c14.9,0,25.62,2.59,32.16,7.76,6.54,5.17,9.81,13.54,9.81,25.09s-3.19,19.84-9.58,24.86Z" />
+                <path class="cls-1"
+                    d="M1872.28,577.89v-123.9c0-3.63,2.94-6.57,6.57-6.57h68.52c3.63,0,6.57,2.94,6.57,6.57v287.95c0,3.63-2.94,6.57-6.57,6.57h-91.74c-2.39,0-4.6-1.3-5.75-3.4l-78.9-145.84-16.6-32.65c-.9-1.93-3.79-1.26-3.76,.86l.77,50.55v123.9c0,3.63-2.94,6.57-6.57,6.57h-68.06c-3.63,0-6.57-2.94-6.57-6.57v-202.22c-1.42-54.51-16.75-77.44-26.65-86.62-2.19-2.03-.74-5.68,2.25-5.68h24.41s82.32,0,82.32,0c11.97,0,23,6.52,28.77,17.01l71.34,133.54,17.13,32.32c.97,1.84,3.76,1.11,3.71-.97l-1.18-51.43Z" />
+                <path class="cls-1"
+                    d="M1029.51,739.83l-91.25-270.09c-4.52-13.35-17.03-22.33-31.12-22.33h-88.19s0,0,0,0h-30.43c-3.08,0-4.47,3.85-2.09,5.81,8.84,7.27,25.29,15.6,12.07,54.99-.03,.08-.05,.15-.08,.23l-77.83,231.39c-1.43,4.26,1.73,8.67,6.22,8.67h78.93c2.96,0,5.54-1.97,6.33-4.82l14.66-52.87c.79-2.84,3.38-4.81,6.33-4.81h81.67c2.97,0,5.57,1.99,6.34,4.85l14.26,52.78c.78,2.87,3.38,4.86,6.34,4.86h81.61c4.5,0,7.66-4.42,6.22-8.68Zm-130.02-114.04h-50.66c-2.17,0-3.75-2.08-3.16-4.17l15.71-56.05,10.89-43.24c.5-1.98,3.31-1.99,3.82-.01l11.29,43.7,15.27,55.6c.57,2.1-.99,4.16-3.17,4.16Z" />
+                <path class="cls-1"
+                    d="M1279.25,581.99h-101.09c-3.63,0-6.57,2.94-6.57,6.57v46.62c0,3.63,2.94,6.57,6.57,6.57h53.19c1.26,0,2.28,1.02,2.28,2.28,0,13.08-4.72,22.97-14.14,29.65-9.43,6.69-22.05,10.04-37.86,10.04-21.6,0-37.56-6.84-47.9-20.53-10.34-13.69-15.51-35.43-15.51-65.24,0-55.96,20.22-83.94,60.67-83.94,23.33,0,38.41,11.41,45.26,34.23,1.09,3.64,5.03,5.6,8.59,4.27l73.23-27.37c3.62-1.35,5.28-5.53,3.62-9.02-11.89-24.9-27.78-43.08-47.66-54.57-21.6-12.47-50.34-18.7-86.22-18.7-31.63,0-58.93,6.16-81.89,18.48-22.97,12.32-40.6,30.19-52.92,53.6-12.32,23.42-18.48,51.4-18.48,83.94s6.08,60.83,18.25,83.94c12.16,23.12,28.81,40.6,49.95,52.46,21.13,11.86,45.08,17.79,71.85,17.79h116.79c18.14,0,32.85-14.71,32.85-32.85v-105.38c0-18.14-14.71-32.85-32.85-32.85Z" />
+                <g>
+                    <g>
+                        <path class="cls-1"
+                            d="M284.78,227.05c-16.4-17.19-40.09-25.77-71.05-25.74l-91.39,.06h-16.37c-1.96,0-2.91,2.42-1.48,3.76,6.86,6.35,17.67,22.68,17.7,62.59v9.23c0,.29,.08,.55,.2,.78l.08,119.29c0,1.9,1.54,3.42,3.43,3.42l54.52-.04c1.18,0,2.23-.78,2.56-1.91,2.51-8.53,4.05-17.41,6.76-25.86,1.88-5.85,7.32-9.65,11.3-3.08,5.31,8.75,7.45,18.84,9.73,28.69,.47,2.03,2.36,2.08,4.06,2.07,10.76-.08,21.44-.68,31.92-3.35,8.67-2.21,16.98-5.76,24.42-10.75,5-3.35,9.57-7.31,13.72-11.66,16.37-17.21,24.55-41.79,24.53-73.77-.02-31.97-8.24-56.54-24.63-73.72Zm-47.73,115.25c-6.02,8.75-16.28,13.13-30.76,13.14l-18.9,.02c-1.89,0-3.42-1.53-3.42-3.42l-.07-102.34c0-1.89,1.52-3.42,3.42-3.43h18.9c14.48-.02,24.73,4.34,30.77,13.09,6.04,8.74,9.06,22.56,9.08,41.46,0,18.9-2.99,32.73-9.02,41.49Z" />
+                        <path class="cls-1"
+                            d="M710.76,395.71l-44.38-69.07c-.76-1.18-.29-2.77,1-3.34,23.07-10.16,34.6-29.23,34.58-57.2-.02-21.31-6.66-37.5-19.94-48.55-13.28-11.05-32.59-16.57-57.92-16.55l-101.95,.07h-16.06c-1.96,.01-2.92,2.42-1.48,3.76,6.46,5.98,16.43,20.84,17.58,55.94l.1,135.95c0,1.89,1.53,3.42,3.42,3.42l53.48-.04c1.89,0,3.42-1.53,3.42-3.43l-.05-62.23c0-1.89,1.53-3.42,3.42-3.43h18.39c1.99-.01,3.82,1.06,4.8,2.8l35.33,63.1c1.08,1.93,3.12,3.13,5.34,3.13l58.57-.04c2.21,0,3.54-2.45,2.35-4.3Zm-76.95-111.62c-4.22,3.32-11.36,4.99-21.41,4.99l-26.44,.02c-1.89,0-3.42-1.53-3.43-3.42l-.03-36.29c0-1.89,1.53-3.42,3.42-3.43l26.44-.02c9.85,0,16.94,1.7,21.27,5.11,4.32,3.42,6.49,8.95,6.5,16.58,0,7.64-2.1,13.12-6.32,16.44Z" />
+                        <path class="cls-1"
+                            d="M916.22,394.74l-64.91-112.75c-.42-.73-.35-1.64,.17-2.3l58.3-73.33c1.78-2.24,.18-5.55-2.68-5.55l-56.22,.04c-2.1,0-4.08,.99-5.35,2.68l-57.39,76.54c-.47,.63-1.48,.3-1.48-.49l-.05-75.25c0-1.89-1.53-3.42-3.43-3.42l-58.11,.04h-16.23c-1.96,.01-2.92,2.42-1.48,3.76,6.85,6.35,17.67,22.68,17.7,62.6v9.23c0,.16,.03,.31,.07,.46l.09,119.6c0,1.89,1.53,3.42,3.43,3.42l54.69-.04c1.89,0,3.42-1.53,3.42-3.43l-.04-48.29c0-1.28,.43-2.53,1.21-3.54l18.2-23.4c.37-.47,1.09-.41,1.37,.12l40.33,75.38c1.02,1.91,3.01,3.1,5.18,3.1l60.24-.04c2.63,0,4.28-2.85,2.96-5.13Z" />
+                    </g>
+                    <path class="cls-1"
+                        d="M511.23,396.66l-62.28-183.89c-2.35-6.95-8.88-11.63-16.22-11.62l-61.62,.04h-19.71c-1.23,.02-1.81,1.5-.94,2.36,3.78,3.73,16.01,8.33,11.55,24.75l-56.51,168.4c-.6,1.77,.73,3.61,2.6,3.61l55.12-.04c1.54,0,2.89-1.03,3.3-2.51l10.04-36.31c.41-1.48,1.76-2.51,3.3-2.51l55.4-.04c1.55,0,2.9,1.04,3.31,2.53l9.82,36.25c.4,1.49,1.76,2.53,3.31,2.53l57.02-.04c1.81,0,3.09-1.78,2.51-3.5Zm-86.63-77.57l-33.81,.02c-1.36,0-2.35-1.3-1.98-2.61l10.4-37.21,7.77-31.29c.17-.69,1.15-.69,1.33,0l8.09,31.58,10.17,36.91c.36,1.31-.62,2.6-1.98,2.6Z" />
+                </g>
+                <path class="cls-1"
+                    d="M2194.01,458.71c18.25,6.8,35.84,17.87,52.78,33.2,3.11,2.81,3.57,7.53,1,10.84l-34.09,43.97c-2.97,3.83-8.6,4.09-12,.64-9.98-10.12-20.51-17.68-31.6-22.68-13.43-6.05-28.85-9.08-46.27-9.08-12.7,0-22.58,2.07-29.67,6.2-7.09,4.14-10.63,9.59-10.63,16.38,0,5.31,3.69,9.45,11.07,12.4,7.38,2.95,19.63,6.05,36.75,9.3,28.34,5.02,50.99,11.59,67.97,19.7,16.97,8.12,29.37,18.38,37.19,30.77,7.82,12.4,11.74,27.75,11.74,46.05,0,19.48-5.61,36.16-16.82,50.03-11.22,13.88-26.42,24.35-45.61,31.44-19.19,7.09-40.89,10.63-65.09,10.63-33.65,0-60.81-3.62-81.47-10.85-18.94-6.63-36.64-16.79-53.1-30.49-2.57-2.14-3.04-5.92-1.16-8.68l34.07-50.21c2.36-3.48,7.3-3.83,10.22-.81,10.36,10.73,21.73,18.66,34.1,23.78,14.61,6.05,31.8,9.08,51.59,9.08,26.86,0,40.29-6.49,40.29-19.48,0-5.6-3.92-10.03-11.74-13.28-7.82-3.25-20.44-6.49-37.86-9.74-23.62-4.43-43.47-9.74-59.55-15.94-16.09-6.2-29.44-15.42-40.07-27.67-10.62-12.25-15.94-28.56-15.94-48.93,0-19.18,5.16-36.15,15.5-50.92,10.33-14.75,25.38-26.27,45.16-34.54,19.77-8.26,43.39-12.4,70.84-12.4s52.17,3.76,72.39,11.29Z" />
+                <g>
+                    <path class="cls-2"
+                        d="M183.17,863.86h-20.98l-3.97,14.3h-21.29l23.17-68.88h25.57l23.27,68.88h-21.92l-3.86-14.3Zm-3.65-13.78l-3.75-13.67-2.92-11.27h-.21l-2.82,11.17-3.86,13.78h13.57Z" />
+                    <path class="cls-2"
+                        d="M437.86,810.9c4.77,1.77,9.34,4.78,13.72,9.03l-10.44,13.46c-2.78-3.2-5.76-5.51-8.92-6.94-3.17-1.43-6.8-2.14-10.9-2.14-2.99,0-5.32,.49-6.99,1.46-1.67,.97-2.5,2.26-2.5,3.86,0,1.25,.87,2.23,2.61,2.92,1.74,.7,4.62,1.43,8.66,2.19,6.68,1.18,12.02,2.73,16.02,4.65,4,1.91,6.92,4.33,8.76,7.25,1.84,2.92,2.77,6.54,2.77,10.85,0,4.59-1.32,8.52-3.97,11.79-2.65,3.27-6.23,5.74-10.75,7.41-4.52,1.67-9.64,2.5-15.34,2.5-7.93,0-14.33-.85-19.2-2.56-4.87-1.7-9.39-4.4-13.57-8.09l9.92-14.61c2.78,3.27,5.9,5.62,9.34,7.04,3.44,1.43,7.5,2.14,12.16,2.14,6.33,0,9.5-1.53,9.5-4.59,0-1.32-.92-2.36-2.77-3.13-1.85-.76-4.82-1.53-8.92-2.3-5.57-1.04-10.25-2.3-14.04-3.76-3.79-1.46-6.94-3.63-9.44-6.52-2.5-2.89-3.76-6.73-3.76-11.53,0-4.52,1.22-8.52,3.65-12,2.43-3.48,5.98-6.19,10.64-8.14,4.66-1.95,10.23-2.92,16.7-2.92s12.3,.89,17.06,2.66Z" />
+                    <path class="cls-2" d="M697.66,825.24h-21.92v52.91h-21.29v-52.91h-22.12v-15.97h65.33v15.97Z" />
+                    <path class="cls-2"
+                        d="M913.38,854.26h-8.66v23.9h-20.87v-68.88h35.27c8.77,0,15.45,1.91,20.04,5.74,4.59,3.83,6.89,9.43,6.89,16.8,0,10.02-4.28,16.73-12.84,20.14l16.8,26.19h-23.27l-13.36-23.9Zm-8.66-14.51h10.33c3.48,0,5.95-.57,7.41-1.72,1.46-1.15,2.19-3.04,2.19-5.69s-.75-4.56-2.24-5.74c-1.5-1.18-3.95-1.77-7.36-1.77h-10.33v14.92Z" />
+                    <path class="cls-2"
+                        d="M1190.56,817.57c6.05,6.23,9.08,14.94,9.08,26.14s-3.03,19.92-9.08,26.14c-6.05,6.23-14.47,9.34-25.26,9.34-7.1,0-13.24-1.39-18.42-4.18-5.18-2.78-9.17-6.85-11.95-12.21-2.78-5.36-4.17-11.72-4.17-19.1s1.39-13.74,4.17-19.1c2.78-5.36,6.76-9.43,11.95-12.21,5.18-2.78,11.32-4.17,18.42-4.17,10.78,0,19.2,3.11,25.26,9.34Zm-34.75,11.69c-2.09,3.17-3.13,7.98-3.13,14.45s1.04,11.29,3.13,14.45c2.09,3.17,5.25,4.75,9.5,4.75s7.39-1.57,9.45-4.7c2.05-3.13,3.08-7.97,3.08-14.51s-1.03-11.37-3.08-14.51c-2.05-3.13-5.2-4.7-9.45-4.7s-7.41,1.58-9.5,4.75Z" />
+                    <path class="cls-2"
+                        d="M1452.19,878.15h-23.38l-18.79-34.13-4.38-9.39h-.21l.42,13.67v29.85h-18.58v-68.88h23.27l18.78,34.13,4.49,9.39h.1l-.42-13.67v-29.85h18.68v68.88Z" />
+                    <path class="cls-2"
+                        d="M1699.52,817.57c6.05,6.23,9.08,14.94,9.08,26.14s-3.03,19.92-9.08,26.14c-6.05,6.23-14.47,9.34-25.26,9.34-7.1,0-13.24-1.39-18.42-4.18-5.18-2.78-9.17-6.85-11.95-12.21-2.78-5.36-4.17-11.72-4.17-19.1s1.39-13.74,4.17-19.1c2.78-5.36,6.76-9.43,11.95-12.21,5.18-2.78,11.32-4.17,18.42-4.17,10.78,0,19.2,3.11,25.26,9.34Zm-34.75,11.69c-2.09,3.17-3.13,7.98-3.13,14.45s1.04,11.29,3.13,14.45c2.09,3.17,5.25,4.75,9.5,4.75s7.39-1.57,9.45-4.7c2.05-3.13,3.08-7.97,3.08-14.51s-1.03-11.37-3.08-14.51c-2.05-3.13-5.2-4.7-9.45-4.7s-7.41,1.58-9.5,4.75Z" />
+                    <path class="cls-2"
+                        d="M1980.66,878.15h-18.79v-27.55l.42-22.23h-.21l-15.13,49.78h-17.11l-14.92-49.78h-.31l.42,22.23v27.55h-18.78v-68.88h30.06l9.29,32.66,3.44,13.67h.21l3.44-13.67,9.29-32.66h28.7v68.88Z" />
+                    <path class="cls-2"
+                        d="M2210.88,853.74v24.42h-21.4v-24.42l-24.21-44.46h21.6l8.35,17.22,5.11,12,5.01-12,8.45-17.22h21.18l-24.11,44.46Z" />
+                </g>
+                <g>
+                    <path class="cls-1"
+                        d="M239.83,652.79l-26.39,95.21c-.07,.26,.12,.51,.39,.51h52.22c10.83,0,21.4-1.14,31.59-3.3,.27-.06,.4-.37,.26-.6l-56.13-92.07c-.48-.79-1.68-.63-1.94,.26Z" />
+                    <path class="cls-1"
+                        d="M428.36,621.54c-.02-.42-.04-.85-.06-1.27-.02-.42-.04-.84-.07-1.27-.02-.42-.05-.84-.08-1.27-.03-.42-.06-.85-.09-1.27-.15-2.11-.34-4.22-.56-6.33-.15-1.44-.32-2.88-.5-4.32-.18-1.44-.38-2.88-.59-4.32-.07-.48-.14-.96-.22-1.44-.15-.96-.3-1.92-.46-2.88h0c-.55-3.31-1.19-6.6-1.9-9.89-.53-2.47-1.11-4.93-1.73-7.39-.16-.61-.31-1.23-.47-1.84-.49-1.84-.99-3.67-1.52-5.5-.18-.61-.36-1.22-.54-1.83-1.09-3.65-2.28-7.28-3.57-10.87-1.92-5.39-4.06-10.71-6.41-15.93-.7-1.55-1.41-3.08-2.14-4.61s-1.48-3.04-2.25-4.55c-.77-1.51-1.56-3-2.36-4.49-.4-.75-.81-1.48-1.22-2.22-1.23-2.21-2.51-4.39-3.82-6.55-.56-.92-1.13-1.83-1.7-2.74-.28-.45-.57-.91-.87-1.36-.29-.45-.59-.9-.88-1.34-2.83-4.5-5.9-8.83-9.18-12.99-.07-.26-.06-.52,.02-.75,.06-.21,.18-.4,.33-.57,.04-.05,.09-.09,.14-.14h0c.05-.04,.1-.08,.16-.11,.12-.07,.24-.12,.38-.15,.2-.04,.41-.04,.64,.02,1.61,.4,3.24,.89,4.9,1.44,.55,.18,1.11,.38,1.67,.58,.32,.11,.64,.23,.96,.35,3.3,1.23,6.69,2.71,10.12,4.36,.06,.03,.11,.05,.16,.06,.44,.14,.85-.01,1.12-.3,.38-.4,.48-1.07,0-1.56-.44-.45-.89-.91-1.35-1.35-.9-.9-1.82-1.8-2.74-2.68-.46-.44-.93-.88-1.39-1.32-1.4-1.31-2.82-2.6-4.26-3.86-1.44-1.26-2.9-2.51-4.38-3.73-2.95-2.44-5.98-4.79-9.08-7.06-3.74-2.74-7.57-5.34-11.49-7.82-.98-.62-1.96-1.23-2.95-1.84-1.48-.91-2.97-1.79-4.48-2.66-1-.58-2.01-1.15-3.02-1.72-.51-.28-1.01-.56-1.52-.84-2.04-1.11-4.09-2.2-6.16-3.26-.69-.35-1.38-.7-2.08-1.05-1.11-.55-2.23-1.1-3.35-1.64-1.12-.54-2.25-1.07-3.38-1.58-1.13-.52-2.27-1.03-3.41-1.53-1.14-.5-2.29-.99-3.44-1.46-5.75-2.39-11.62-4.49-17.59-6.25-.44-.13-.89-.26-1.34-.39-1.35-.38-2.69-.75-4.05-1.09-3.61-.92-7.26-1.71-10.93-2.34-2.66-.46-5.33-.85-8-1.18-.89-.11-1.78-.21-2.67-.31-3.15-.34-6.3-.61-9.45-.81-2.17-.14-4.34-.25-6.51-.34-.07,0-.14,0-.21,0-.71-.03-1.41-.05-2.12-.08-1.19-.04-2.38-.07-3.58-.09-5.68-.13-11.37-.12-17.06-.08-2.22,.02-4.44,.04-6.67,.06-1.13,0-2.26,.02-3.38,.03-.84,0-1.68,.02-2.51,.02-2.51,.02-5.03,.04-7.54,.04h-30.66c-.67,0-1.19-.6-1.1-1.27,.91-6.77,1.8-13.56,1.91-20.44,0-.52,.02-1.04,.02-1.57,.03-3.15-.02-6.31-.16-9.46-.03-.79-.07-1.58-.11-2.36-.02-.43-.04-.86-.07-1.29-.12-1.97-.26-3.94-.44-5.91-.04-.43-.08-.87-.12-1.3-.08-.79-.16-1.58-.24-2.37-.28-2.59-.62-5.18-1.01-7.76-.26-1.78-.54-3.57-.84-5.36-.12-.72-.24-1.44-.37-2.15h0c-.32-1.8-.68-3.58-1.09-5.36-.33-1.42-.69-2.82-1.1-4.21-.09-.3-.18-.59-.27-.89-.12-.37-.23-.74-.36-1.11-.07-.22-.14-.44-.22-.66-.01-.04-.03-.08-.05-.12-.05-.11-.12-.21-.2-.28-.27-.25-.66-.3-.99-.18-.04,.01-.07,.03-.1,.05-.08,.04-.16,.1-.23,.16-.14,.14-.24,.33-.27,.57-.02,.18-.04,.36-.07,.54,0,.06-.01,.11-.02,.17-.08,.59-.18,1.19-.29,1.81-.08,.51-.16,1.03-.24,1.55-.08,.51-.17,1.03-.25,1.55-.2,1.21-.4,2.43-.63,3.64-2.2,12.13-5.31,24.08-9.25,35.75-.24,.72-.49,1.44-.74,2.16-.52,1.5-1.05,2.99-1.6,4.48-.57,1.53-1.15,3.06-1.74,4.58-1.5,3.82-3.08,7.61-4.75,11.36-2.56,5.71-5.32,11.34-8.28,16.85-.48,.89-.96,1.77-1.44,2.65-.85,1.54-1.72,3.07-2.6,4.6-2.65,4.57-5.44,9.06-8.36,13.45-.9,1.35-1.81,2.67-2.73,3.98-.93,1.31-1.87,2.6-2.82,3.88h0c-.55,.73-1.09,1.46-1.65,2.18,0,0,0,0,0,0-.83,1.08-1.66,2.16-2.51,3.22-4.51,5.69-9.24,11.18-13.98,16.76-.59,.7-1.19,1.4-1.78,2.1-.59,.71-1.19,1.41-1.78,2.11-1.07,1.27-2.16,2.54-3.25,3.82-.36,.43-.73,.86-1.09,1.29-.28,.35-.57,.7-.86,1.05-.71,.87-1.4,1.76-2.07,2.66-.13,.18-.26,.36-.4,.55-.26,.36-.52,.73-.77,1.09h0c-.2,.3-.4,.59-.6,.89-1.27,1.94-2.38,3.96-3.22,6.11-.21,.53-.4,1.06-.59,1.6-.09,.27-.18,.54-.27,.81-.11,.34-.21,.68-.31,1.01-.2,.68-.38,1.36-.55,2.05-.08,.34-.16,.69-.24,1.03-.31,1.42-.56,2.86-.76,4.31-.07,.49-.13,.99-.18,1.48-.04,.31-.07,.63-.1,.94-.05,.5-.09,1-.13,1.5-.05,.67-.09,1.33-.12,2-.35,6.95,.11,13.96-.3,20.9-.03,.55-.07,1.1-.12,1.66-.02,.28-.04,.57-.07,.85-.05,.55-.11,1.11-.18,1.66-.04,.32-.08,.65-.12,.97-.03,.23-.06,.47-.1,.7-.13,.88-.28,1.75-.44,2.62-.05,.29-.11,.58-.17,.87-.23,1.15-.49,2.29-.78,3.42-.14,.57-.29,1.13-.44,1.69-.16,.57-.32,1.13-.49,1.69-.16,.56-.34,1.11-.51,1.66-.09,.28-.18,.56-.27,.84-.36,1.1-.75,2.2-1.15,3.28-.3,.83-.62,1.64-.94,2.46-.21,.54-.43,1.07-.65,1.61-1.34,3.23-2.81,6.42-4.35,9.58-.51,1.05-1.03,2.1-1.56,3.14-3.15,6.29-6.49,12.49-9.47,18.8-3.35,7.1-8.75,15.45-7.39,23.66h0c.05,.31,.11,.61,.19,.9h0c.22,.88,.56,1.67,.98,2.4t0,0c.07,.12,.15,.25,.22,.37,.23,.36,.49,.71,.76,1.04h0c.24,.3,.5,.58,.77,.85,.4,.41,.84,.8,1.29,1.17,.11,.09,.22,.18,.34,.26,.34,.26,.69,.51,1.05,.76,1.08,.73,2.23,1.4,3.38,2.04,.49,.27,.99,.54,1.49,.8h0c.51,.26,1.01,.51,1.52,.75h0c.51,.24,1.03,.48,1.55,.71h0c.78,.35,1.58,.68,2.38,.99,.27,.1,.54,.21,.81,.31,.27,.1,.55,.2,.81,.3,.4,.15,.81,.3,1.23,.44,.82,.29,1.64,.56,2.47,.82,.41,.13,.83,.26,1.25,.38,.52,.16,1.04,.31,1.56,.46l.23,.06c.47,.13,.95,.26,1.42,.38,.08,.02,.17,.04,.25,.06,.52,.14,1.04,.27,1.57,.4,.32,.08,.63,.15,.95,.23,2.2,.53,4.4,.99,6.57,1.39,1.88,.36,3.78,.66,5.68,.91,.21,.03,.42,.06,.63,.08,.96,.12,1.92,.23,2.88,.32,.29,.03,.58,.06,.87,.08,4.95,.45,9.93,.54,14.89,.27,.91-.05,1.83-.12,2.75-.23,.49-.06,.97-.12,1.46-.18,.43-.06,.86-.12,1.29-.19,.11-.02,.22-.04,.34-.05,.64-.1,1.28-.22,1.92-.34,.44-.09,.87-.18,1.31-.27,.1-.02,.21-.04,.31-.07,.32-.07,.63-.14,.95-.22,.71-.16,1.42-.34,2.12-.53,1.02-.27,2.04-.57,3.05-.87,0,0,0,0,0,0,.92-.28,1.84-.57,2.74-.88,.45-.16,.91-.31,1.36-.47,.9-.31,1.79-.64,2.67-.97,.06-.02,.1-.05,.15-.08,0,0,0,0,0,0l1.17-.61c.05-.03,.1-.06,.13-.1,.06-.05,.1-.12,.12-.18,.08-.2,.04-.43-.1-.59-.03-.04-.07-.07-.11-.09-.06-.04-.12-.06-.19-.08-.66-.13-1.42-.38-2.2-.83-.16-.09-.31-.19-.47-.3-.08-.06-.16-.11-.24-.17-.23-.17-.46-.37-.69-.59h0c-.11-.11-.2-.22-.27-.36-.12-.22-.17-.48-.17-.76,0-.05,0-.1,0-.16,0-.08,.01-.15,.02-.23,.02-.15,.06-.3,.11-.46,.05-.15,.1-.29,.18-.44,.05-.1,.1-.19,.16-.29,.11-.2,.25-.39,.4-.58,.04-.04,.08-.09,.12-.13l22.56-25.13,13.1-14.59,1.09-1.19,1.86-2.02s.04-.05,.06-.08c.02-.02,.04-.05,.06-.08,.24-.4,.16-.9-.15-1.2-.04-.04-.08-.08-.14-.11-.03-.02-.06-.04-.1-.06-.05-.02-.1-.05-.16-.06-.06-.02-.12-.03-.18-.04-.46-.05-.96-.12-1.46-.23-.25-.05-.51-.11-.75-.17-.22-.06-.43-.12-.64-.19-.2-.07-.4-.15-.59-.23h0c-.13-.06-.26-.12-.38-.19,0,0,0,0,0,0-.12-.07-.24-.14-.34-.22-.05-.03-.09-.06-.13-.09-.07-.06-.14-.11-.2-.18-.06-.06-.12-.12-.18-.19h0c-.11-.13-.2-.27-.26-.42-.17-.59-.14-1.23,.09-1.83,.05-.14,.12-.28,.19-.41,.11-.19,.24-.38,.39-.55l53.42-60.33,.97-1.2c.05-.06,.09-.14,.12-.21,.02-.04,.02-.08,.03-.12,.01-.08,.01-.17,0-.25,0-.05-.02-.09-.04-.14h0c-.04-.09-.09-.16-.16-.23-.08-.08-.18-.14-.3-.17-.06-.02-.13-.04-.2-.06-.19-.06-.39-.15-.57-.26-.06-.04-.12-.08-.18-.12-.06-.04-.11-.09-.16-.14-.1-.09-.18-.2-.25-.32-.29-.79-.21-1.6,.29-2.14l10.06-10.87s.09-.09,.14-.13c.14-.12,.3-.22,.48-.29,.44-.18,.96-.18,1.49-.03,.15,.04,.3,.1,.44,.16,.1,.04,.19,.09,.29,.15,.28,.17,.55,.38,.8,.64,.28,.3,.57,.6,.85,.9,.08,.08,.15,.15,.22,.23,.07,.08,.15,.16,.22,.23,.22,.24,.49,.42,.77,.54,.34,.15,.73,.21,1.11,.18,.07,0,.14-.02,.22-.03,4.99-.94,10.45-.45,15.75,1.42,.51,.18,1.01,.37,1.51,.58,.51,.2,1.01,.42,1.51,.65,.5,.23,.99,.47,1.49,.73,2.96,1.53,5.82,3.51,8.44,5.94,.48,.44,.94,.89,1.39,1.35,.17,.17,.34,.34,.5,.52,.33,.35,.65,.7,.96,1.06,.31,.36,.62,.72,.91,1.08,.3,.36,.59,.73,.87,1.1,.14,.19,.28,.37,.42,.56,.36,.5,.71,1.01,1.05,1.52h0c.34,.51,.65,1.03,.96,1.55,.15,.26,.3,.53,.44,.79,.58,1.05,1.1,2.11,1.56,3.19h0c.23,.54,.44,1.08,.65,1.62,.1,.27,.2,.55,.29,.82,.18,.55,.35,1.09,.51,1.64,.08,.28,.15,.55,.22,.83,.14,.55,.26,1.09,.37,1.64,.49,2.44,.66,4.88,.53,7.26-.02,.35-.16,.64-.36,.87-.09,.09-.19,.18-.3,.24-.08,.04-.15,.08-.23,.12-.43,.17-.94,.12-1.36-.21-1.37-1.1-2.77-2.24-4.18-3.44-.57-.47-1.13-.95-1.7-1.44-.28-.24-.57-.49-.86-.73-.65-.56-1.31-1.13-1.97-1.72-.66-.58-1.33-1.17-2-1.76-1.67-1.49-3.36-3.02-5.07-4.6-.63-.58-1.27-1.17-1.9-1.76-.64-.59-1.27-1.19-1.92-1.8-.04-.04-.07-.06-.11-.09-.04-.02-.08-.04-.12-.06-.26-.1-.55-.02-.73,.16-.17,.16-.26,.4-.2,.65,.02,.06,.04,.11,.06,.16,4.83,9.12,13.66,31.14-2.48,47.83l-25.37,26.25c-.11,.12-.24,.2-.38,.26,0,0,0,0,0,0-.04,.02-.07,.03-.1,.04-.29,.09-.6,.05-.86-.1-.1-.06-.19-.13-.27-.22-.02-.03-.04-.05-.06-.08-.08-.1-.14-.21-.18-.34,0-.03-.02-.07-.03-.11-.15-.71-.35-1.39-.59-2.06-.16-.45-.34-.89-.54-1.32-.88-1.93-2.12-3.67-3.64-5.13-.66-.64-1.37-1.22-2.13-1.74-.22-.15-.44-.29-.66-.43-.11-.07-.22-.14-.34-.2-.31-.18-.63-.36-.96-.53-.32-.16-.66-.32-.99-.46-.34-.14-.68-.28-1.03-.4-1.74-.61-3.61-.94-5.56-.94-.71,0-1.41,.04-2.1,.13-.42,.05-.83,.12-1.24,.21-.12,.02-.25,.05-.37,.08-.36,.08-.72,.18-1.07,.28h0c-.26,.08-.53,.17-.79,.26-.79,.28-1.55,.62-2.28,1.01-.22,.11-.44,.24-.65,.36-.42,.25-.84,.52-1.24,.81-.4,.29-.79,.59-1.17,.91-.39,.33-.77,.69-1.13,1.06-.18,.18-.36,.38-.53,.57-.39,.44-.75,.9-1.1,1.38-.12,.16-.23,.32-.34,.49-.08,.12-.16,.25-.24,.37-.08,.13-.16,.26-.23,.39-.15,.26-.29,.52-.42,.78-.09,.18-.17,.36-.26,.53-.24,.54-.46,1.08-.63,1.64-.07,.21-.13,.42-.19,.63-.12,.42-.22,.85-.3,1.28-.04,.22-.08,.43-.11,.65-.17,1.13-.23,2.29-.18,3.46,.02,.48,.07,.96,.13,1.43,.02,.16,.04,.32,.07,.47,.02,.17,.06,.34,.08,.51,.06,.34,.13,.68,.2,1.01,.07,.34,.15,.67,.22,1.01,.05,.21,.1,.42,.15,.63,.15,.63,.3,1.25,.43,1.88,.22,1,.4,2.01,.48,3.03,.21,2.59-.2,5.11-1.04,7.5-.17,.49-.36,.98-.57,1.46-.14,.32-.28,.64-.44,.95-.16,.32-.32,.63-.49,.93-.25,.46-.52,.91-.79,1.35-.93,1.49-2.01,2.88-3.18,4.16l-1.18,1.24-21.94,23.01c-.64,.67-1.29,1.33-1.94,1.99-.26,.27-.58,.47-.92,.58-.83,.3-1.78,.14-2.47-.49l-.68-.63c-.8-.73-1.59-1.47-2.39-2.2l-.09-.08-6.34-5.87h0c-.06-.06-.11-.09-.18-.12-.17-.07-.35-.04-.5,.05h0s-.06,.05-.08,.07c-.08,.07-.13,.17-.16,.27-.02,.09-.02,.19,.01,.3,.71,2.16,1.4,5.64,.42,9.55-.03,.12-.06,.23-.09,.35-.06,.23-.14,.47-.21,.71-.04,.12-.08,.24-.12,.36-.3,.87-.7,1.74-1.19,2.63t0,0c-.14,.26-.29,.51-.46,.77,0,0,0,0,0,0-.1,.16-.2,.32-.31,.49-.32,.49-.68,.97-1.08,1.45t0,0c-.08,.1-.16,.19-.24,.29-.25,.29-.51,.58-.78,.87l-11.99,12.71-41.12,40.82s0,0-.01,.02c-.11,.13-.02,.33,.15,.33h85.57c.16,0,.3-.1,.36-.24v-.02s.02-.03,.02-.05l1.54-5.9,1.19-4.54,24.49-97.06c.04-.15,.04-.3,.02-.44-.02-.17-.1-.34-.2-.48t0,0c-.04-.06-.09-.1-.14-.16-.05-.05-.11-.09-.17-.13-.3-.19-.59-.4-.86-.62-.12-.1-.24-.2-.35-.3-.06-.05-.12-.1-.17-.16-.1-.1-.2-.2-.3-.3h0c-.26-.28-.5-.57-.71-.87-.05-.08-.1-.16-.16-.24-.13-.19-.26-.39-.37-.6-.11-.2-.22-.42-.32-.63-.08-.17-.15-.35-.22-.53,0,0,0,0,0,0-.04-.12-.08-.23-.12-.35-.06-.18-.11-.37-.16-.57-.01-.04-.02-.08-.03-.12-.04-.18-.08-.36-.11-.54-.09-.56-.13-1.14-.1-1.74,0-.11,0-.23,.02-.34,.04-.49,.12-.98,.24-1.44,.02-.1,.05-.19,.08-.28,.05-.18,.12-.36,.18-.55t0,0c.07-.2,.16-.4,.24-.59,.44-.96,1.05-1.82,1.79-2.55,.18-.18,.36-.34,.56-.51,.68-.56,1.44-1.01,2.26-1.35,.24-.1,.48-.18,.72-.25,.61-.18,1.25-.3,1.92-.34,1.08-.07,2.12,.07,3.09,.37,.17,.05,.33,.11,.5,.17,.32,.12,.64,.26,.94,.42,.15,.08,.3,.17,.45,.26h0c.82,.51,1.55,1.14,2.16,1.87t0,0c.06,.08,.13,.16,.19,.24,.12,.16,.24,.33,.36,.5,.06,.08,.11,.17,.16,.26t0,0c.14,.24,.28,.48,.4,.73,.12,.25,.23,.51,.32,.77,.09,.26,.18,.53,.25,.8,.21,.82,.3,1.69,.26,2.59-.01,.26-.04,.53-.08,.79-.07,.52-.2,1.02-.36,1.5-.2,.61-.47,1.18-.81,1.72-.13,.21-.27,.42-.42,.62t0,0c-.15,.2-.3,.4-.47,.58-.08,.1-.17,.19-.26,.28-.13,.13-.22,.29-.27,.46,0,.03-.02,.07-.02,.1,0,.04-.01,.08-.02,.11-.02,.22,.02,.45,.14,.65l58.77,104.1s.03,.05,.05,.07c.08,.1,.21,.15,.34,.13,.02,0,.04,0,.06,0,1.08-.28,2.16-.57,3.23-.87,.42-.12,.85-.24,1.27-.36,.56-.16,1.11-.32,1.66-.49,.71-.22,1.42-.43,2.13-.66,.71-.22,1.41-.45,2.11-.69,.7-.23,1.4-.47,2.1-.72,.53-.18,1.05-.37,1.58-.57,1.56-.56,3.1-1.15,4.64-1.77,.61-.24,1.22-.49,1.83-.75,.13-.06,.26-.11,.4-.16,1.13-.48,2.25-.96,3.37-1.46,.89-.39,1.77-.8,2.64-1.21,1.94-.91,3.85-1.87,5.74-2.86,.65-.34,1.29-.68,1.93-1.03,.64-.35,1.28-.7,1.92-1.06,.64-.36,1.27-.72,1.9-1.09,1.29-.75,2.57-1.52,3.83-2.3,1.21-.75,2.41-1.52,3.59-2.3,.02-.02,.04-.03,.07-.04,1.19-.79,2.37-1.6,3.53-2.41,.59-.42,1.19-.84,1.77-1.27,1.18-.85,2.34-1.72,3.49-2.61,0,0,.02-.01,.02-.02,1.14-.88,2.27-1.77,3.38-2.68,.57-.46,1.12-.93,1.68-1.39,.55-.47,1.1-.93,1.65-1.4,.28-.1,.57-.1,.83-.02,.14,.04,.28,.11,.41,.19,.09,.06,.18,.14,.25,.22,.04,.04,.08,.08,.11,.13,.25,.35,.34,.81,.14,1.31-.97,2.45-1.97,4.83-2.91,7-.12,.27-.24,.54-.35,.8-.34,.79-.69,1.55-1.01,2.28-.11,.24-.22,.48-.32,.71h0c-.1,.24-.21,.46-.31,.68-.2,.44-.4,.87-.59,1.27-.21,.45-.1,.89,.16,1.19,.02,.03,.05,.06,.08,.08,.01,.01,.02,.02,.04,.03,.03,.03,.06,.05,.09,.08,.24,.17,.54,.25,.84,.2,.06-.01,.12-.03,.18-.05,.06-.02,.12-.05,.18-.09,.06-.04,.12-.08,.18-.12,.15-.13,.29-.26,.44-.38,.14-.13,.29-.26,.44-.38,1.45-1.29,2.88-2.61,4.29-3.97,.57-.55,1.13-1.09,1.68-1.65,.91-.91,1.8-1.82,2.69-2.75,.32-.33,.64-.67,.95-1.01,.95-1.01,1.89-2.04,2.81-3.09,.05-.06,.1-.12,.15-.18,.82-.92,1.63-1.86,2.43-2.8,.83-.98,1.64-1.98,2.45-2.98,.8-1,1.6-2.01,2.38-3.04,2.04-2.67,4-5.42,5.89-8.23,.57-.86,1.14-1.72,1.7-2.59,.16-.24,.31-.49,.46-.73,.22-.34,.44-.69,.66-1.04,.66-1.05,1.3-2.1,1.93-3.16,.17-.29,.34-.58,.51-.87,.58-.98,1.14-1.96,1.7-2.95,0,0,0,0,0,0,.72-1.28,1.42-2.58,2.1-3.88,.23-.43,.45-.87,.68-1.3,0,0,0,0,0,0,1.76-3.41,3.39-6.88,4.9-10.41,.34-.79,.67-1.59,1-2.39,.4-.96,.78-1.92,1.15-2.89,1-2.56,1.92-5.15,2.77-7.75,.55-1.67,1.06-3.34,1.54-5.02,.6-2.04,1.14-4.09,1.64-6.15,.26-1.09,.52-2.18,.75-3.28,.24-1.09,.46-2.19,.67-3.29,.63-3.29,1.14-6.59,1.52-9.88,.09-.82,.18-1.65,.26-2.47,.04-.41,.08-.83,.11-1.23,.14-1.63,.24-3.25,.31-4.87,0-.03,0-.07,0-.1,.02-.4,.03-.79,.04-1.18,0-.02,0-.05,0-.07,0-.06,0-.11,.02-.16,.01-.07,.03-.14,.06-.21,.02-.07,.05-.13,.08-.19,.03-.06,.07-.12,.11-.17,.03-.04,.06-.07,.09-.1,.03-.04,.06-.07,.09-.09,.26-.24,.61-.36,.95-.36,.11,0,.22,.01,.33,.04,.11,.02,.22,.07,.32,.12,.04,.02,.08,.04,.11,.07,.07,.05,.14,.11,.2,.18,.04,.03,.06,.07,.09,.1,.04,.05,.08,.1,.11,.16,1.48,2.45,2.85,4.99,4.12,7.57,1.27,2.58,2.45,5.2,3.55,7.82,.06,.13,.12,.24,.21,.33,.03,.03,.06,.06,.09,.09,.04,.04,.08,.07,.13,.1h0c.08,.05,.17,.09,.26,.12,.03,0,.06,.02,.09,.02,.06,.02,.12,.02,.18,.02,.19,0,.38-.03,.55-.11,.1-.04,.18-.1,.26-.17,.21-.19,.35-.46,.36-.81,.08-4.12,.02-8.25-.17-12.37Zm-329.1,7.63c-.15,.66-.3,1.31-.44,1.95-.14,.64-.27,1.27-.39,1.88-.08,.38-.14,.75-.21,1.12-.01,.06-.02,.12-.03,.17-.06,.31-.11,.62-.15,.92-.09,.61-.16,1.19-.21,1.74-.1,1.17-.1,2.19,.05,3.02,.02,.08,.01,.15,0,.22,0,.04-.02,.07-.03,.1-.03,.06-.07,.12-.12,.18-.02,.02-.04,.03-.06,.05-.02,.02-.04,.03-.06,.04-.22,.12-.44,.25-.67,.4l-.23,.16h0c-.2,.14-.4,.29-.6,.45h0c-.2,.16-.4,.33-.61,.51t0,0c-.08,.07-.15,.14-.23,.2-.15,.14-.31,.29-.46,.44-.08,.07-.16,.15-.23,.23-.1,.1-.21,.2-.31,.31-.21,.21-.42,.43-.63,.66-.32,.34-.63,.7-.95,1.07-.04,.04-.08,.07-.12,.08-.12,.03-.26-.05-.29-.18,0-.03,0-.06,0-.1,.75-3.94,3.08-9.37,6.48-15.83,.02-.03,.03-.05,.05-.07,.04-.04,.08-.06,.12-.07,.09-.02,.18,0,.25,.06,.02,.01,.04,.03,.05,.05,.05,.06,.06,.14,.04,.23Zm28.46-67.88c-.14,.49-.28,.98-.42,1.47-.41,1.48-.82,2.99-1.23,4.51-.01,.05-.03,.1-.06,.13-.05,.08-.13,.13-.21,.15-.02,0-.05,.01-.07,.02-.02,0-.04,0-.05,0-.09,0-.18-.02-.25-.08-.02-.02-.05-.04-.07-.06-.02-.02-.03-.04-.04-.06-.03-.04-.05-.09-.06-.14-.2-1.17-.36-2.33-.48-3.5-.03-.3-.06-.59-.08-.88-.08-.88-.13-1.76-.17-2.63-.18-4.54,.17-9.1,.96-13.68,.03-.18,.06-.36,.09-.54,.12-.68,.25-1.36,.39-2.04,.17-.84,.36-1.68,.56-2.52,.21-.91,.44-1.81,.69-2.71,.51-1.88,1.07-3.77,1.69-5.66,.1-.31,.46-.36,.67-.2,.02,.02,.04,.03,.05,.05,.05,.06,.08,.13,.1,.21,.4,2.94,.93,5.66,1.71,8,.04,.12,.08,.24,.12,.37t0,0c.13,.36,.26,.71,.4,1.05,.09,.23,.19,.46,.28,.67,.1,.22,.2,.43,.3,.64,.11,.21,.22,.41,.32,.61,.07,.12,.14,.24,.22,.36,.07,.12,.14,.24,.22,.35,0,.02,.02,.03,.03,.05,.02,.03,.04,.06,.06,.09,.15,.22,.22,.49,.19,.75-.01,.12-.04,.23-.09,.34h0c-.02,.05-.05,.1-.08,.14-.08,.14-.17,.28-.26,.42-.18,.3-.36,.6-.53,.92h0c-.17,.32-.34,.65-.51,.99-.17,.34-.34,.7-.51,1.07-.16,.37-.32,.75-.49,1.13h0c-.1,.24-.2,.49-.3,.74-.07,.19-.15,.38-.22,.57-.22,.57-.44,1.17-.65,1.78t0,0c-.17,.49-.34,.99-.51,1.5-.17,.51-.33,1.02-.5,1.54h0c-.41,1.31-.82,2.67-1.21,4.06h0Z" />
+                </g>
+            </svg>
+        </a>
+    </footer>
+</body>
+
+</html>

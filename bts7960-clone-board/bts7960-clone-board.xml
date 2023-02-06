@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/rick/Projects/github.com/darkdragonsastro/bts7960-clone-board/bts7960-clone-board.kicad_sch</source>
+    <date>Mon 28 Nov 2022 11:06:05 AM EST</date>
+    <tool>Eeschema 6.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>bts7960-clone-board.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>470uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <fields>
+        <field name="DigiKey Part">732-8831-1-ND</field>
+        <field name="Manufacturer Part">860020474014</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/860020474014/5727068</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="DigiKey Part" value="732-8831-1-ND"/>
+      <property name="Manufacturer Part" value="860020474014"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/860020474014/5727068"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e21a3150-7314-40bf-93a4-91282e74119a</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+        <field name="lcsc">CC0603KRX7R9BB101</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value="CC0603KRX7R9BB101"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab3d8854-b2f9-434b-8d3f-e5184107b678</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0538aa2a-99c5-43eb-83e9-ea71514cd641</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>210b8e93-327d-497b-86ad-e2100577e8a0</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7165b8de-423a-454e-aace-bce80a683a64</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e33f91f7-2ce7-4cf8-83c0-da2ea3a7a3a7</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4495aff-f9bc-4a22-8137-2e5c645504b8</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5eab0084-b637-489d-aec1-e950ba7ed0df</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>220nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6bd4981-ef85-44df-a01d-4be24e9b54cf</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>220nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc8a4ffa-6b5f-43e7-ac19-b8e7ec62adbc</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>220nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>067bcffb-1bf1-413d-8a44-47198ad86858</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>220nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="jlc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8102c06-11b0-47bf-a898-4b9711bb6049</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>Fuse</value>
+      <footprint>01-rickbassham:Keystone 3522-2 Fuse Holder</footprint>
+      <datasheet>https://www.keyelco.com/userAssets/file/M65p41.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">36-3522-2-ND</field>
+        <field name="Manufacturer Part">3522-2</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/keystone-electronics/3522-2/151571</field>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="DigiKey Part" value="36-3522-2-ND"/>
+      <property name="Manufacturer Part" value="3522-2"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/keystone-electronics/3522-2/151571"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7bd40de0-7f89-4558-8bbf-b6a812e84074</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x06_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d0ba76c-7db4-4bbb-86f1-5326b29ec1bc</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BTN8962TA</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-7_TabPin8</footprint>
+      <datasheet>https://www.infineon.com/dgdl/Infineon-BTN8982TA-DS-v01_00-EN.pdf?fileId=db3a30433fa9412f013fbe32289b7c17</datasheet>
+      <fields>
+        <field name="jlc">TO-263-7</field>
+        <field name="lcsc">C112630</field>
+      </fields>
+      <libsource lib="01-rickbassham" part="BTN8982TA" description="High Current PN Half Bridge, TO-263-7"/>
+      <property name="jlc" value="TO-263-7"/>
+      <property name="lcsc" value="C112630"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39b2573e-054a-4c6c-85b7-cfb3e816f783</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>BTN8962TA</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-7_TabPin8</footprint>
+      <datasheet>https://www.infineon.com/dgdl/Infineon-BTN8982TA-DS-v01_00-EN.pdf?fileId=db3a30433fa9412f013fbe32289b7c17</datasheet>
+      <fields>
+        <field name="jlc">TO-263-7</field>
+        <field name="lcsc">C112630</field>
+      </fields>
+      <libsource lib="01-rickbassham" part="BTN8982TA" description="High Current PN Half Bridge, TO-263-7"/>
+      <property name="jlc" value="TO-263-7"/>
+      <property name="lcsc" value="C112630"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce037650-44a0-41f5-828b-a35b30299e08</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+        <field name="lcsc">C217840</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value="C217840"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e3e84581-870b-49d3-a330-781da20abf97</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+        <field name="lcsc">C217840</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value="C217840"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e10c9ec4-1499-42a0-a6f2-678563498ed8</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+        <field name="lcsc">C217840</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value="C217840"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6843d49-462f-499f-9698-82dd0e618f1a</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>874def14-a130-4579-9fb7-b2e76ea0cfe2</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>534ed3cb-7c80-4f06-9704-e7252cc43f5d</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8449a3ce-250e-4e71-bee5-6b218ad5bc0e</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>34d6c4b2-2e20-40ac-a4e5-5d18a4930333</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+        <field name="lcsc">C217840</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value="C217840"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f6b8a0f3-c788-44cf-84b1-47bfd0137e57</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>0.51k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06fc8fc9-d486-4713-8aa1-265849c02378</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>0.51k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f19b1a86-36ae-448d-93b7-ea266772e446</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="jlc">0603</field>
+        <field name="lcsc">C217840</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="jlc" value="0603"/>
+      <property name="lcsc" value="C217840"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5e48ba79-87c2-4582-b351-f9a0b064c414</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>SN74AHC244PWR</value>
+      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <fields>
+        <field name="jlc">TSSOP20_44MM_065P</field>
+        <field name="lcsc">C7475</field>
+      </fields>
+      <libsource lib="01-rickbassham" part="SN74AHC244PWR" description=""/>
+      <property name="jlc" value="TSSOP20_44MM_065P"/>
+      <property name="lcsc" value="C7475"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="bts7960-clone-board.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>01e9b6e7-adf9-4ee7-9447-a588630ee4a2</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="01-rickbassham" part="BTN8982TA">
+      <description>High Current PN Half Bridge, TO-263-7</description>
+      <docs>https://www.infineon.com/dgdl/Infineon-BTN8982TA-DS-v01_00-EN.pdf?fileId=db3a30433fa9412f013fbe32289b7c17</docs>
+      <footprints>
+        <fp>TO*263*TabPin8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BTN8982TA</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TO-263-7_TabPin8</field>
+        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-BTN8982TA-DS-v01_00-EN.pdf?fileId=db3a30433fa9412f013fbe32289b7c17</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="power_in"/>
+        <pin num="2" name="IN" type="input"/>
+        <pin num="3" name="INH" type="input"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="SR" type="input"/>
+        <pin num="6" name="IS" type="output"/>
+        <pin num="7" name="" type="power_in"/>
+        <pin num="8" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="01-rickbassham" part="PP45-OFFSET">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">PP45-OFFSET</field>
+        <field name="Footprint">01-rickbassham:PP45-OFFSET</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="power_in"/>
+        <pin num="2" name="-" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="01-rickbassham" part="SN74AHC244PWR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74AHC244PWR</field>
+        <field name="Footprint">Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1OE" type="input"/>
+        <pin num="2" name="1A1" type="input"/>
+        <pin num="3" name="2Y4" type="output"/>
+        <pin num="4" name="1A2" type="input"/>
+        <pin num="5" name="2Y3" type="output"/>
+        <pin num="6" name="1A3" type="input"/>
+        <pin num="7" name="2Y2" type="output"/>
+        <pin num="8" name="1A4" type="input"/>
+        <pin num="9" name="2Y1" type="output"/>
+        <pin num="10" name="GND" type="passive"/>
+        <pin num="11" name="2A1" type="input"/>
+        <pin num="12" name="1Y4" type="output"/>
+        <pin num="13" name="2A2" type="input"/>
+        <pin num="14" name="1Y3" type="output"/>
+        <pin num="15" name="2A3" type="input"/>
+        <pin num="16" name="1Y2" type="output"/>
+        <pin num="17" name="2A4" type="input"/>
+        <pin num="18" name="1Y1" type="output"/>
+        <pin num="19" name="2OE" type="input"/>
+        <pin num="20" name="VCC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x06_Male">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="01-rickbassham">
+      <uri>/home/rick/Projects/github.com/rickbassham/kicad/symbols/01-rickbassham.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="VCC" pintype="passive"/>
+    </net>
+    <net code="2" name="+12V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="Q1" pin="7" pintype="power_in"/>
+      <node ref="Q2" pin="7" pintype="power_in"/>
+    </net>
+    <net code="3" name="12V_UNFUSED">
+      <node ref="F1" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="BACKWARD_MOTOR">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="1A2" pintype="input"/>
+    </net>
+    <net code="5" name="FOREWARD_MOTOR">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="1A1" pintype="input"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="Q1" pin="1" pintype="power_in"/>
+      <node ref="Q2" pin="1" pintype="power_in"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="1OE" pintype="input"/>
+      <node ref="U1" pin="10" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="2OE" pintype="input"/>
+    </net>
+    <net code="7" name="INH_A">
+      <node ref="Q1" pin="3" pinfunction="INH" pintype="input"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="INH_B">
+      <node ref="Q2" pin="3" pinfunction="INH" pintype="input"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="IN_A">
+      <node ref="Q1" pin="2" pinfunction="IN" pintype="input"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="IN_B">
+      <node ref="Q2" pin="2" pinfunction="IN" pintype="input"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="MOTOR_A">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="4" pintype="passive"/>
+      <node ref="Q1" pin="8" pintype="passive"/>
+    </net>
+    <net code="12" name="MOTOR_B">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="Q2" pin="4" pintype="passive"/>
+      <node ref="Q2" pin="8" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="6" pinfunction="IS" pintype="output"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="5" pinfunction="SR" pintype="input"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="Q2" pin="5" pinfunction="SR" pintype="input"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="Q2" pin="6" pinfunction="IS" pintype="output"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad12)">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="1Y4" pintype="output"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad14)">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="1Y3" pintype="output"/>
+    </net>
+    <net code="19" name="Net-(U1-Pad16)">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="1Y2" pintype="output"/>
+    </net>
+    <net code="20" name="Net-(U1-Pad18)">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="1Y1" pintype="output"/>
+    </net>
+    <net code="21" name="ON">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="1A3" pintype="input"/>
+      <node ref="U1" pin="8" pinfunction="1A4" pintype="input"/>
+    </net>
+    <net code="22" name="unconnected-(Q1-Pad4)">
+      <node ref="Q1" pin="4" pintype="output"/>
+    </net>
+    <net code="23" name="unconnected-(Q2-Pad4)">
+      <node ref="Q2" pin="4" pintype="output"/>
+    </net>
+    <net code="24" name="unconnected-(U1-Pad3)">
+      <node ref="U1" pin="3" pinfunction="2Y4" pintype="output+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U1-Pad5)">
+      <node ref="U1" pin="5" pinfunction="2Y3" pintype="output+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U1-Pad7)">
+      <node ref="U1" pin="7" pinfunction="2Y2" pintype="output+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U1-Pad9)">
+      <node ref="U1" pin="9" pinfunction="2Y1" pintype="output+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U1-Pad11)">
+      <node ref="U1" pin="11" pinfunction="2A1" pintype="input+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U1-Pad13)">
+      <node ref="U1" pin="13" pinfunction="2A2" pintype="input+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U1-Pad15)">
+      <node ref="U1" pin="15" pinfunction="2A3" pintype="input+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U1-Pad17)">
+      <node ref="U1" pin="17" pinfunction="2A4" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,36 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,6.0.2+dfsg-1*%
+%TF.CreationDate,2023-02-05T15:08:22-05:00*%
+%TF.ProjectId,LTC4414-battery-backup-test,4c544334-3431-4342-9d62-617474657279,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Legend,Bot*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 6.0.2+dfsg-1) date 2023-02-05 15:08:22*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,5.600000*%
+G04 APERTURE END LIST*
+%LPC*%
+D10*
+%TO.C,H6*%
+X100330000Y-105410000D03*
+%TD*%
+%TO.C,H5*%
+X92710000Y-105410000D03*
+%TD*%
+%TO.C,H4*%
+X119380000Y-105410000D03*
+%TD*%
+%TO.C,H3*%
+X111760000Y-105410000D03*
+%TD*%
+%TO.C,H2*%
+X80010000Y-105410000D03*
+%TD*%
+%TO.C,H1*%
+X72390000Y-105410000D03*
+%TD*%
+M02*

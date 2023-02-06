@@ -1,0 +1,2102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/rick/Projects/github.com/darkdragonsastro/dragon-light/dragon-light-panel/dragon-light-panel.kicad_sch</source>
+    <date>Wed 16 Nov 2022 09:23:10 AM EST</date>
+    <tool>Eeschema 6.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>dragon-light-panel.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>470uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <fields>
+        <field name="DigiKey Part">732-8831-1-ND</field>
+        <field name="Manufacturer Part">860020474014</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/860020474014/5727068</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="DigiKey Part" value="732-8831-1-ND"/>
+      <property name="Manufacturer Part" value="860020474014"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/860020474014/5727068"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>374d9f81-0c51-44dd-8533-13897b804511</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2f0b653-7894-4870-9bf7-61faa5ff192e</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ef15032-a886-4e84-afa7-f290317637b5</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e87240fd-bc12-4873-bb37-c0f4e2a13cfd</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eef28992-d1be-4e0f-acc4-da16fd8e9176</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a485a506-d404-4163-8966-e823be70f215</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>14a607b2-7c55-4520-b4d8-46bcca72fb65</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>afc5f493-e4c7-4a7e-91ca-7829b912a44e</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79e0093e-0c48-45d1-8201-d8c495955e44</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6830578-f2fe-492b-aac6-727ca18df6ba</tstamps>
+    </comp>
+    <comp ref="D10">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d145cb5-1be0-477e-992b-b0e3ad13d954</tstamps>
+    </comp>
+    <comp ref="D11">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df607777-e0aa-430b-91e1-ca5304355939</tstamps>
+    </comp>
+    <comp ref="D12">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1cba40e9-b703-44d8-855a-a2d3273e92a2</tstamps>
+    </comp>
+    <comp ref="D13">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dccaa679-56a5-4109-b744-515d53cc66b4</tstamps>
+    </comp>
+    <comp ref="D14">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2205a110-6b4b-482e-ad7f-75af88962d7c</tstamps>
+    </comp>
+    <comp ref="D15">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5652988-4db7-41d4-a1b5-418952396cad</tstamps>
+    </comp>
+    <comp ref="D16">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ff71ef1-ae64-43be-b6a2-9738b38e7cbe</tstamps>
+    </comp>
+    <comp ref="D17">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5fdb899-6b89-480d-9e7a-7165d6d2cfb4</tstamps>
+    </comp>
+    <comp ref="D18">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a156362-7e6d-49ac-be3e-56bd24568413</tstamps>
+    </comp>
+    <comp ref="D19">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2d4a8f1-76dc-44c0-9138-66e44c193095</tstamps>
+    </comp>
+    <comp ref="D20">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c4587029-7976-42ee-b58c-7caa0906b2a7</tstamps>
+    </comp>
+    <comp ref="D21">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1acc1a6-011d-4fc8-983c-f97479473411</tstamps>
+    </comp>
+    <comp ref="D22">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>324ee9e5-49ee-4fd7-bd7a-ab7bfc05e2ed</tstamps>
+    </comp>
+    <comp ref="D23">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a401fdd2-d020-4384-9a91-bf2adc3cfbed</tstamps>
+    </comp>
+    <comp ref="D24">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e36018d-a166-4725-8bbe-c04911f4592a</tstamps>
+    </comp>
+    <comp ref="D25">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0e9822c-f122-45d0-9c6c-caa0a3baec9c</tstamps>
+    </comp>
+    <comp ref="D26">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2c0c0b35-eaf6-4f9e-a023-5d1b52338afb</tstamps>
+    </comp>
+    <comp ref="D27">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f0f39cd4-ec10-4740-8c9f-2a648fe1ba10</tstamps>
+    </comp>
+    <comp ref="D28">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ed2abd9-bbed-4f95-9218-99faed10990d</tstamps>
+    </comp>
+    <comp ref="D29">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2875cc79-be52-443d-973a-c115fa048432</tstamps>
+    </comp>
+    <comp ref="D30">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4373d9c4-82aa-4cac-b73d-946ee27a0b2d</tstamps>
+    </comp>
+    <comp ref="D31">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8655bdd2-c52b-4caf-8af9-5bf27583556a</tstamps>
+    </comp>
+    <comp ref="D32">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>51f4343b-4784-4653-b291-1386c34567da</tstamps>
+    </comp>
+    <comp ref="D33">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b73c618-953a-4d86-bb06-25881e91fe42</tstamps>
+    </comp>
+    <comp ref="D34">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05dfeb29-650e-4ed2-94c7-8863543ca180</tstamps>
+    </comp>
+    <comp ref="D35">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39a0ae8e-72c4-48e7-8cfe-71e314c3e7f6</tstamps>
+    </comp>
+    <comp ref="D36">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19984784-87f6-42a2-8938-5dc2cedf4f01</tstamps>
+    </comp>
+    <comp ref="D37">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e065d567-e0ca-4c5a-a515-5ba69590cd6f</tstamps>
+    </comp>
+    <comp ref="D38">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e632df6d-ccd6-4691-adc1-89013dd5fd28</tstamps>
+    </comp>
+    <comp ref="D39">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6dae942-942d-4541-b099-16da9054ae36</tstamps>
+    </comp>
+    <comp ref="D40">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17757662-228c-4c69-b30a-02c579f9c94a</tstamps>
+    </comp>
+    <comp ref="D41">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>888cc9a8-4f4f-4440-a9cf-45e7886ac418</tstamps>
+    </comp>
+    <comp ref="D42">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>27acf950-55ca-4b81-991e-92a2c3d8c86d</tstamps>
+    </comp>
+    <comp ref="D43">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce790dc9-00a8-48a3-bed6-404f4d250d44</tstamps>
+    </comp>
+    <comp ref="D44">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5ba8ac55-c65c-4d4a-b5d3-9ebe3ca79c5d</tstamps>
+    </comp>
+    <comp ref="D45">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0fea5b1-0482-4765-b5dd-ef3e6f89da78</tstamps>
+    </comp>
+    <comp ref="D46">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a46f0904-9fde-4d62-9f8c-502352844cbc</tstamps>
+    </comp>
+    <comp ref="D47">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0e74642-b451-4818-8635-6c6460d97fb7</tstamps>
+    </comp>
+    <comp ref="D48">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3810a028-03b2-4384-8aa9-fc469adcc957</tstamps>
+    </comp>
+    <comp ref="D49">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2c61604-a816-4601-a1a6-18f90f86b771</tstamps>
+    </comp>
+    <comp ref="D50">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30202477-b016-46ff-882e-ac6f40559120</tstamps>
+    </comp>
+    <comp ref="D51">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>028fa86a-5859-41be-bd1f-58207503dfac</tstamps>
+    </comp>
+    <comp ref="D52">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f1a57b2-dba0-48a2-a2c3-8869c69377cc</tstamps>
+    </comp>
+    <comp ref="D53">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3efd24e3-5dd8-470e-a10b-b9225a3efe88</tstamps>
+    </comp>
+    <comp ref="D54">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8fb4119-650e-4ac6-94c5-3cf1ab9f9325</tstamps>
+    </comp>
+    <comp ref="D55">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0489dffc-494f-44a7-bef4-1d6f41b97b42</tstamps>
+    </comp>
+    <comp ref="D56">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb5a5641-1fe5-4c37-9754-346a94c7e3f0</tstamps>
+    </comp>
+    <comp ref="D57">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>778725e4-1673-4d1d-83c2-3e293cc039b7</tstamps>
+    </comp>
+    <comp ref="D58">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12635317-af63-4abd-9847-c5cb51009333</tstamps>
+    </comp>
+    <comp ref="D59">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0afd37e6-c2e9-4c6e-b9a2-eca94af91d19</tstamps>
+    </comp>
+    <comp ref="D60">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>baf98d09-6ab5-4655-be51-a62cf95f3a7d</tstamps>
+    </comp>
+    <comp ref="D61">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a1c5a6b-af6c-4c2f-9b1b-a52569209af3</tstamps>
+    </comp>
+    <comp ref="D62">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ed5629e-d55f-45c3-9124-5f5f9733625d</tstamps>
+    </comp>
+    <comp ref="D63">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef8d0df8-a75a-4d4f-bd89-4f0e85a6e321</tstamps>
+    </comp>
+    <comp ref="D64">
+      <value>QBL7IW60D-CW</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>https://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">1516-QBL7IW60D-WW-ND</field>
+        <field name="JLCPCB Part #">C130725</field>
+        <field name="Manufacturer Part">QBL7IW60D-WW</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Manufacturer Part" value="QBL7IW60D-WW"/>
+      <property name="DigiKey Part" value="1516-QBL7IW60D-WW-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/qt-brightek-qtb/QBL7IW60D-WW/10441171"/>
+      <property name="JLCPCB Part #" value="C130725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99ec8c58-fb90-4593-971c-1c6d096501cf</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>01-rickbassham:MountingHole_3.2mm_M3_DIN965_Pad</footprint>
+      <fields>
+        <field name="DigiKey Part">952-1495-ND</field>
+        <field name="Manufacturer Part">R30-3000402</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/harwin-inc/R30-3000402/2264476</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Manufacturer Part" value="R30-3000402"/>
+      <property name="DigiKey Part" value="952-1495-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/harwin-inc/R30-3000402/2264476"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a16ea363-07ef-4986-8f97-4e5827bfc40a</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>01-rickbassham:MountingHole_3.2mm_M3_DIN965_Pad</footprint>
+      <fields>
+        <field name="DigiKey Part">952-1495-ND</field>
+        <field name="Manufacturer Part">R30-3000402</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/harwin-inc/R30-3000402/2264476</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Manufacturer Part" value="R30-3000402"/>
+      <property name="DigiKey Part" value="952-1495-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/harwin-inc/R30-3000402/2264476"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c88f1737-32b5-4cea-a76f-93ad322556d3</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>01-rickbassham:MountingHole_3.2mm_M3_DIN965_Pad</footprint>
+      <fields>
+        <field name="DigiKey Part">952-1495-ND</field>
+        <field name="Manufacturer Part">R30-3000402</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/harwin-inc/R30-3000402/2264476</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Manufacturer Part" value="R30-3000402"/>
+      <property name="DigiKey Part" value="952-1495-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/harwin-inc/R30-3000402/2264476"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fdcfde96-a39b-488f-b71e-beb6ffe00e27</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>01-rickbassham:MountingHole_3.2mm_M3_DIN965_Pad</footprint>
+      <fields>
+        <field name="DigiKey Part">952-1495-ND</field>
+        <field name="Manufacturer Part">R30-3000402</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/harwin-inc/R30-3000402/2264476</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Manufacturer Part" value="R30-3000402"/>
+      <property name="DigiKey Part" value="952-1495-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/harwin-inc/R30-3000402/2264476"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>acc434b3-2221-4f02-be63-e67d7e7c5439</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>RCJ-044</value>
+      <footprint>01-rickbassham:CUI_RCJ-044</footprint>
+      <datasheet>https://www.cuidevices.com/product/resource/rcj-04x.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">CP-1421-ND</field>
+        <field name="Manufacturer Part">RCJ-044</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/cui-devices/RCJ-044/408508</field>
+      </fields>
+      <libsource lib="01-rickbassham" part="RCJ-044" description=""/>
+      <property name="DigiKey Part" value="CP-1421-ND"/>
+      <property name="Manufacturer Part" value="RCJ-044"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/cui-devices/RCJ-044/408508"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>97f41563-b89f-4467-a029-b22244819e02</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2382424b-0905-467b-a458-dad739d3178b</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>50593f0e-4b8a-4d12-ac62-bd667cbcd5fc</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0087b9fc-2184-4277-b27d-fdc9864f96b5</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b06e56ca-8204-4746-8dfa-99885562776b</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6125bca-1263-496a-a78e-799901bde1dd</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1eb1fab4-1961-4484-9feb-7de3d8bdfd54</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b0156bb-5168-4899-a375-b164c17244ab</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>015c73ed-8723-4601-9146-6b03c6a74621</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8f2bdbf5-172b-4508-a879-c86b0e20f258</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd6c0f9b-6564-422c-8ab5-17d2d1d3257f</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5199b2a-7836-4823-8d6e-f7c9b66b7e88</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d93fd14-31e5-4983-bf0f-44596f504aee</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0662bd0c-c211-4e16-b2ea-e4d0732eb952</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>029176b9-3637-4fc7-acd1-188e38f8d041</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e8c9d580-5b02-4f91-885d-dc249dc28e51</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>82</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.vishay.com/docs/28729/pr010203.pdf</datasheet>
+      <fields>
+        <field name="DigiKey Part">PPC82W-2CT-ND</field>
+        <field name="Manufacturer Part">PR02000208209JR500</field>
+        <field name="PurchaseLink">https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer Part" value="PR02000208209JR500"/>
+      <property name="DigiKey Part" value="PPC82W-2CT-ND"/>
+      <property name="PurchaseLink" value="https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PR02000208209JR500/596235"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="dragon-light-panel.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d9c41522-8fcc-4f6b-a56d-bb765776f63e</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="01-rickbassham" part="RCJ-044">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RCJ-044</field>
+        <field name="Footprint">01-rickbassham:CUI_RCJ-044</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">11.6 mm</field>
+        <field name="PARTREV">1.02</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="MANUFACTURER">CUI Devices</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="01-rickbassham">
+      <uri>/home/rick/Projects/github.com/rickbassham/kicad/symbols/01-rickbassham.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+12V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D13" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D17" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D21" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D25" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D29" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D33" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D37" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D41" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D45" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D49" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D53" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D57" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D61" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D9" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="2" pintype="passive"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(D5-Pad1)">
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(D6-Pad1)">
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(D7-Pad1)">
+      <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(D8-Pad1)">
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(D10-Pad1)">
+      <node ref="D10" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D11" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(D10-Pad2)">
+      <node ref="D10" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D9" pin="1" pinfunction="K" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(D11-Pad1)">
+      <node ref="D11" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D12" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(D12-Pad1)">
+      <node ref="D12" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(D13-Pad1)">
+      <node ref="D13" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D14" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(D14-Pad1)">
+      <node ref="D14" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D15" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(D15-Pad1)">
+      <node ref="D15" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D16" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(D16-Pad1)">
+      <node ref="D16" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(D17-Pad1)">
+      <node ref="D17" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D18" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(D18-Pad1)">
+      <node ref="D18" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D19" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(D19-Pad1)">
+      <node ref="D19" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D20" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(D20-Pad1)">
+      <node ref="D20" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(D21-Pad1)">
+      <node ref="D21" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D22" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(D22-Pad1)">
+      <node ref="D22" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D23" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(D23-Pad1)">
+      <node ref="D23" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D24" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(D24-Pad1)">
+      <node ref="D24" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(D25-Pad1)">
+      <node ref="D25" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D26" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(D26-Pad1)">
+      <node ref="D26" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D27" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(D27-Pad1)">
+      <node ref="D27" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D28" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(D28-Pad1)">
+      <node ref="D28" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="31" name="Net-(D29-Pad1)">
+      <node ref="D29" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D30" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="32" name="Net-(D30-Pad1)">
+      <node ref="D30" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D31" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="33" name="Net-(D31-Pad1)">
+      <node ref="D31" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D32" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="34" name="Net-(D32-Pad1)">
+      <node ref="D32" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(D33-Pad1)">
+      <node ref="D33" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D34" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(D34-Pad1)">
+      <node ref="D34" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D35" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(D35-Pad1)">
+      <node ref="D35" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D36" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(D36-Pad1)">
+      <node ref="D36" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="39" name="Net-(D37-Pad1)">
+      <node ref="D37" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D38" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="40" name="Net-(D38-Pad1)">
+      <node ref="D38" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D39" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(D39-Pad1)">
+      <node ref="D39" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D40" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="42" name="Net-(D40-Pad1)">
+      <node ref="D40" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(D41-Pad1)">
+      <node ref="D41" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D42" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="44" name="Net-(D42-Pad1)">
+      <node ref="D42" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D43" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="45" name="Net-(D43-Pad1)">
+      <node ref="D43" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D44" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(D44-Pad1)">
+      <node ref="D44" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(D45-Pad1)">
+      <node ref="D45" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D46" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="48" name="Net-(D46-Pad1)">
+      <node ref="D46" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D47" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="49" name="Net-(D47-Pad1)">
+      <node ref="D47" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D48" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="50" name="Net-(D48-Pad1)">
+      <node ref="D48" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="51" name="Net-(D49-Pad1)">
+      <node ref="D49" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D50" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="52" name="Net-(D50-Pad1)">
+      <node ref="D50" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D51" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(D51-Pad1)">
+      <node ref="D51" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D52" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="54" name="Net-(D52-Pad1)">
+      <node ref="D52" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+    </net>
+    <net code="55" name="Net-(D53-Pad1)">
+      <node ref="D53" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D54" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="56" name="Net-(D54-Pad1)">
+      <node ref="D54" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D55" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="57" name="Net-(D55-Pad1)">
+      <node ref="D55" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D56" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="58" name="Net-(D56-Pad1)">
+      <node ref="D56" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+    </net>
+    <net code="59" name="Net-(D57-Pad1)">
+      <node ref="D57" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D58" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="60" name="Net-(D58-Pad1)">
+      <node ref="D58" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D59" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="61" name="Net-(D59-Pad1)">
+      <node ref="D59" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D60" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="62" name="Net-(D60-Pad1)">
+      <node ref="D60" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="63" name="Net-(D61-Pad1)">
+      <node ref="D61" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D62" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="64" name="Net-(D62-Pad1)">
+      <node ref="D62" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D63" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="65" name="Net-(D63-Pad1)">
+      <node ref="D63" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D64" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="66" name="Net-(D64-Pad1)">
+      <node ref="D64" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+    </net>
+    <net code="67" name="unconnected-(H1-Pad1)">
+      <node ref="H1" pin="1" pinfunction="1" pintype="input+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(H2-Pad1)">
+      <node ref="H2" pin="1" pinfunction="1" pintype="input+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(H3-Pad1)">
+      <node ref="H3" pin="1" pinfunction="1" pintype="input+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(H4-Pad1)">
+      <node ref="H4" pin="1" pinfunction="1" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>
